@@ -3,7 +3,7 @@
 ## Welcome to GitHub Pages
 
 $$
-\[  \sin x \]
+  \sin x 
 hogehoge
 hoge ho-ge
 $$
