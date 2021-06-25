@@ -1,11 +1,13 @@
 ## Welcome to GitHub Pages
 
-$$
+\[
   \sin x 
 hogehoge
 hoge ho-ge
-$$
+\]
+hagehage
 
+sima \( \cos x \)
 hogehoge
 
 You can use the [editor on GitHub](https://github.com/Akira5Kitaoka/Akira5Kitaoka.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
