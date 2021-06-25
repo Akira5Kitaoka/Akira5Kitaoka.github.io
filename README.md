@@ -11,7 +11,11 @@
 
 ## Welcome to GitHub Pages
 
-&&  \sin x &&
+\[  \sin x \]
+hogehoge
+\(  \sin x \) hoge ho-ge
+
+hogehoge
 
 You can use the [editor on GitHub](https://github.com/Akira5Kitaoka/Akira5Kitaoka.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
