@@ -1,16 +1,12 @@
-<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{
- inlineMath:[['\$','\$'],['\\(','\\)']],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
- processEscapes:true
- },CommonHTML: {matchFontHeight:false}});
-</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 ## Welcome to GitHub Pages
 
+$$
 \[  \sin x \]
 hogehoge
-\(  \sin x \) hoge ho-ge
+hoge ho-ge
+$$
 
 hogehoge
 
