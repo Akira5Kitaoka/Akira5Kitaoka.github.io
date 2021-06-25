@@ -1,4 +1,18 @@
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
+
 ## Welcome to GitHub Pages
+
+\[  \sin x \]
 
 You can use the [editor on GitHub](https://github.com/Akira5Kitaoka/Akira5Kitaoka.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
