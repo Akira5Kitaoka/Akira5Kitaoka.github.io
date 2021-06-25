@@ -67,9 +67,13 @@ nat. J. Math. 31 (2020), no. 13, 2050112.
 [[article link](https://www.worldscientific.com/doi/10.1142/S0129167X20501128)]
 [[arXiv:1911.03092](https://arxiv.org/abs/1911.03092)]
 
-## 口頭発表
+## 講演
+
+### 予定
 
 [?] TBA, 幾何セミナ, 名古屋大学大学院 多元数理研究科, 予定.
+
+### 研究集会・セミナー
 
 [9] Analytic torsions associated with the Rumin complex on contact spheres, Symplectic & Poisson Geometry Seminar, University of Illinois at Urbana–Champaign, 2020年3月2日.
 
@@ -88,3 +92,10 @@ nat. J. Math. 31 (2020), no. 13, 2050112.
 [2] 球面上のRumin-Seshadri捩率関数, 数理新人セミナー, 京都大学, 2018年2月.
 
 [1] 論文紹介その２(Poletsky Theoryとその応用), 複素解析幾何のポテンシャル論的諸相(Potential Theoretical Aspects of Complex Analytic Geometry), 東京大学数理科学研究所, 2016年2月. 
+
+
+### その他
+なし
+<---!
+都数での活動
+--->
