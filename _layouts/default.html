@@ -32,29 +32,19 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-
-<!-- メニューバー ------------->
-    <script src="{{ '/assets/js/jquery-3.2.1.min.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/jquery.prmenu.min.js' | relative_url }}"></script>
-    <script>
-      $(document).ready(function(){
-      $('#top-menu').prmenu();
-      });
-    </script>
-    <ul id="top-menu">
-      <li><a href="{{ '/' | relative_url }}">トップページ</a></li>
-      <li><a href="{{ '/CV' | relative_url }}">履歴書</a></li>
-      <li><a href="{{ '/papers' | relative_url }}">論文</a></li>
-      <li><a href="{{ '/talks' | relative_url }}">発表</a></li>
-    </ul>
-
 <!-- メニューバー ------------->
 
 
 <!-- ヘッド -->
 
     <header class="page-header" role="banner">
+
       <h1 class="project-name">北岡　旦</h1>
+
+      <a href=href="{{ '/' | relative_url }}" class="btn">トップページ</a>
+      <a href=href="{{ '/CV' | relative_url }}" class="btn">履歴書</a>
+      <a href=href="{{ '/papers' | relative_url }}" class="btn">論文</a>
+      <a href=href="{{ '/talks' | relative_url }}" class="btn">講演</a>
       <a href="https://github.com/Akira5Kitaoka/Akira5Kitaoka.github.io" class="btn">View on GitHub</a>
     </header>
 
