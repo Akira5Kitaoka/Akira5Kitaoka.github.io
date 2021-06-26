@@ -14,7 +14,9 @@
         gtag('config', '{{ site.google_analytics }}');
       </script>
     {% endif %}
+
     <meta charset="UTF-8">
+
 
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,9 +25,40 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    </style>
+
   </head>
+
+
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+
+<!-- メニューバー ------------->
+    <script src="{{ '/assets/js/jquery-3.2.1.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.prmenu.min.js' | relative_url }}"></script>
+    <script>
+      $(document).ready(function(){
+      $('#top-menu').prmenu();
+      });
+    </script>
+    <ul id="top-menu">
+      <li><a href="{{ '/' | relative_url }}">トップページ</a></li>
+      <li><a href="{{ '/CV' | relative_url }}">履歴書</a>
+      <li><a href="{{ '/papers' | relative_url }}">論文</a>
+      <li><a href="{{ '/talks' | relative_url }}">発表</a>
+    </ul>
+
+<!-- メニューバー ------------->
+
+
+<!-- ヘッド -->
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
@@ -34,6 +67,9 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
     </header>
+
+
+<!--  Markdown の本体 -->
 
     <main id="content" class="main-content" role="main">
       {{ content }}
