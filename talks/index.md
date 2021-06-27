@@ -15,7 +15,7 @@
 
 [4] The Rumin-Seshadri torsion function on the spheres, [HAYAMA Symposium on Complex Analysis in Several Variables XX & Pacific Rim Complex-Symplectic Geometry Conference](https://sites.google.com/site/scvhayama/2018), Shonan Village Center, 2018年7月14日.
 
-[3] Eigenvalues of Rumin-Seshadri laplacian on spheres, Berkeley Tokyo Summer School Seminar, University of California, Barkeley, 2017年8月.
+[3] Eigenvalues of Rumin-Seshadri laplacian on spheres, [Berkeley-Tokyo Summer School "Geometry, Representation Theory, and Mathematical Physics"](http://park.itc.u-tokyo.ac.jp/MSF/conference/BerkeleyTokyo2017/), University of California, Barkeley, 2017年8月28日.
 
 [2] 球面上のRumin-Seshadri捩率関数, [数理新人セミナー](https://sites.google.com/view/math-graduate/MATHSCI-FRESHMAN-SEMINAR/2018), 京都大学, 2018年2月13日.
 
