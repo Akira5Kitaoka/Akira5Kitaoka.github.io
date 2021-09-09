@@ -3,7 +3,7 @@
 English version is here (to be appeared).
 
 
-所属：東京大学大学院　数理科学研究科　特任研究員
+所属：東京大学大学院　数理科学研究所　特任研究員
 
 住所：〒153-8914　東京都目黒区駒場3-8-1
 
@@ -20,6 +20,8 @@ Google Scholar：[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user
 
 
 ## 今後の予定
+
+1. 2021年度の多変数関数論冬セミナー(2021年12月9日-11日)にて、講演する予定です。タイトルは未定です。
 
 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。
 
