@@ -21,3 +21,4 @@
 
 [1] 論文紹介その２(Poletsky Theoryとその応用), 複素解析幾何のポテンシャル論的諸相(Potential Theoretical Aspects of Complex Analytic Geometry), 東京大学数理科学研究所, 2016年2月12日.
 
+hogehoge
