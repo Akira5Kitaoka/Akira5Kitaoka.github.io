@@ -20,5 +20,3 @@
 [2] 球面上のRumin-Seshadri捩率関数, [数理新人セミナー](https://sites.google.com/view/math-graduate/MATHSCI-FRESHMAN-SEMINAR/2018), 京都大学, 2018年2月13日.
 
 [1] 論文紹介その２(Poletsky Theoryとその応用), 複素解析幾何のポテンシャル論的諸相(Potential Theoretical Aspects of Complex Analytic Geometry), 東京大学数理科学研究所, 2016年2月12日.
-
-hogehoge
