@@ -21,7 +21,7 @@ Google Scholar：[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user
 
 ## 今後の予定
 
-1. 2021年度の多変数関数論冬セミナー(2021年12月9日-11日)にて、講演する予定です。タイトルは未定です。
+1. [2021年度の多変数関数論冬セミナー](https://www.comp.tmu.ac.jp/hisamoto/SCVwinter2021.html)(2021年12月9日-11日)にて、講演する予定です。
 
 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。
 
