@@ -3,6 +3,8 @@
 
 ### 研究集会・セミナー
 
+[10] レンズ空間上のRay-Singer捩率とRumin複体のラプラシアン (Japanese), [複素解析幾何セミナー](https://www.ms.u-tokyo.ac.jp/seminar/2021/sem21-175.html), オンライン, 2021年11月29日10:30-12:00.
+
 [9] Analytic torsions associated with the Rumin complex on contact spheres, [Symplectic & Poisson Geometry Seminar](https://math.illinois.edu/system/files/2020-02/Schedule%20-%20draft%202.pdf), University of Illinois at Urbana–Champaign, 2020年3月2日.
 
 [8] Analytic torsions associated with the Rumin complex on contact spheres, [複素幾何セミナー](https://www.ms.u-tokyo.ac.jp/seminar/2019/sem19-214.html), 東京大学, 2019年12月9日.
