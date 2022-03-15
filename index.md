@@ -21,8 +21,6 @@ Google Scholar：[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user
 
 ## 今後の予定
 
-1. [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](http://www.math.ritsumei.ac.jp/~dtarama/GSDE2022/index.html)にて、講演する予定です。
-
 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。
 
 1. [幾何セミナー, 名古屋大学大学院 多元数理研究科](https://sites.google.com/site/geometryseminarnagoya/)にて、講演する予定です。
