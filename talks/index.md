@@ -3,6 +3,8 @@
 
 ### 研究集会・セミナー
 
+[12] Ray-Singer torsion and the Rumin Laplacian on lens spaces, [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](http://www.math.ritsumei.ac.jp/~dtarama/GSDE2022/index.html), オンライン, 2021年3月15日.
+
 [11] レンズ空間上のRay-Singer捩率とRumin複体のラプラシアン (Japanese), [2021年度の多変数関数論冬セミナー](https://www.comp.tmu.ac.jp/hisamoto/SCVwinter2021.html), オンライン, 2021年12月10日.
 
 [10] レンズ空間上のRay-Singer捩率とRumin複体のラプラシアン (Japanese), [複素解析幾何セミナー](https://www.ms.u-tokyo.ac.jp/seminar/2021/sem21-175.html), オンライン, 2021年11月29日10:30-12:00.
