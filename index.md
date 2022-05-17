@@ -2,7 +2,7 @@
 
 English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.github.io/).
 
-現所属：とある民間企業
+現所属：日本電気株式会社　研究員
 
 (旧)所属：東京大学大学院　数理科学研究所　特任研究員
 
