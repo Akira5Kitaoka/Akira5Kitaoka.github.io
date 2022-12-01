@@ -5,8 +5,9 @@
 [3] Harmonic forms and the Rumin complex on Sasakian manifolds, preprint.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
-[2] Ray-Singer Torsion and the Rumin Laplacian on lens spaces, preprint.
-[[arXiv:2009.03276](https://arxiv.org/abs/2009.03276)]
+[2] Ray-Singer Torsion and the Rumin Laplacian on lens spaces, 	
+SIGMA 18 (2022), 091, 16 pages.
+[[article link](https://doi.org/10.3842/SIGMA.2022.091)][[arXiv:2009.03276](https://arxiv.org/abs/2009.03276)]
 
 [1] Analytic torsions associated with the Rumin complex on contact spheres, Internat. J. Math. 31 (2020), no. 13, 2050112.
 [[article link](https://www.worldscientific.com/doi/10.1142/S0129167X20501128)]
