@@ -10,9 +10,9 @@ English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.githu
 
 メール：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)
 
-研究分野(情報科学)：機械学習、？？？、？？？
+研究分野(情報科学)：数理最適化、機械学習
 
-研究内容：？？？
+研究内容：多目的最適化の逆問題を解くアルゴリズムの開発をしています。
 
 (旧)研究分野(数学)：接触幾何、放物型幾何、幾何解析
 
