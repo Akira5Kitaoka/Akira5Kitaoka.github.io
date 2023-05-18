@@ -2,6 +2,9 @@
 
 ### 論文
 
+[6] Akira Kitaoka, Riki Eto, A proof of imitation of Wasserstein inverse reinforcement learning for multi-objective optimization, preprint.
+[[arXiv:2305.10089 (cs)](https://arxiv.org/abs/2305.10089)]
+
 [5] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
 [[arXiv:2305.06137 (cs)](https://arxiv.org/abs/2305.06137)]
 
