@@ -34,8 +34,6 @@ Qiita: [akira5kitaoka](https://qiita.com/akira5kitaoka)
 
 ## 今後の予定
 
-1. [IBIS2023](https://ibisml.org/ibis2023/)、2023年10月30日の14:00-17:00、1-086にて、ポスター発表する予定です。
-
 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。
 
 1. [幾何セミナー, 名古屋大学大学院 多元数理研究科](https://sites.google.com/site/geometryseminarnagoya/)にて、講演する予定です。
