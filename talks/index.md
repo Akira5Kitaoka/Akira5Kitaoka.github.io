@@ -5,7 +5,7 @@
 
 [13] 北岡　旦, 江藤　力, 逆最適化に対するsuboptimality損失を用いた模倣性 (Japanese), [IBIS2023](https://ibisml.org/ibis2023/), 1-086, 2023年10月30日.
 
-[12] Akira Kitaoka, Ray-Singer torsion and the Rumin Laplacian on lens spaces, [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](http://www.math.ritsumei.ac.jp/~dtarama/GSDE2022/index.html), オンライン, 2021年3月15日.
+[12] Akira Kitaoka, Ray-Singer torsion and the Rumin Laplacian on lens spaces, [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](http://www.math.ritsumei.ac.jp/~dtarama/GSDE2022/index.html), オンライン, 2021年3月15日. [予稿集](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2268-10.pdf)
 
 [11] 北岡　旦, レンズ空間上のRay-Singer捩率とRumin複体のラプラシアン (Japanese), [2021年度の多変数関数論冬セミナー](https://www.comp.tmu.ac.jp/hisamoto/SCVwinter2021.html), オンライン, 2021年12月10日.
 
