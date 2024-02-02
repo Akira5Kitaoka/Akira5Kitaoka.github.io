@@ -1,6 +1,6 @@
 # 北岡 旦 / Akira KITAOKA
 
-English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.github.io/).
+The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.github.io/).
 
 現所属：日本電気株式会社　研究員
 
