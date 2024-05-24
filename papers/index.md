@@ -2,6 +2,9 @@
 
 ### 論文
 
+[7] Akira Kitaoka, A fast algorithm to minimize prediction loss of the optimal solution in inverse optimization problem of MILP, preprint.
+[[arXiv:2405.14273 (cs)](https://arxiv.org/abs/2405.14273)]
+
 [6] Akira Kitaoka, Riki Eto, A proof of imitation of Wasserstein inverse reinforcement learning for multi-objective optimization, preprint.
 [[arXiv:2305.10089 (cs)](https://arxiv.org/abs/2305.10089)]
 
