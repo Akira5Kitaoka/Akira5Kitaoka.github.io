@@ -2,6 +2,8 @@
 
 The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.github.io/).
 
+<img src="images/20210810-2.png" width="20%">
+
 現所属：日本電気株式会社　研究員
 
 メール：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)
