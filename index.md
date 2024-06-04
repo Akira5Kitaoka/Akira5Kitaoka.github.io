@@ -34,8 +34,6 @@ Qiita: [akira5kitaoka](https://qiita.com/akira5kitaoka)
 
 ## 今後の予定
 
-1. 5月28日から31日に開催される[JSAI2024](https://confit.atlas.jp/guide/event/jsai2024/subject/1F3-GS-1-02/date?cryptoId=)，GS-1 基礎・理論　5月28日(火) 13:00 〜 14:40 F会場にて，\[1F3-GS-1-02\] 「混合整数線形計画の逆問題におけるSuboptimality損失と予測損失の等価性」を発表します．内容は，与えられたデータが最適解になるような，(混合整数)線形計画法の目的関数の重みを推定する高速なアルゴリズムを提案するよというお話です．
-
 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。
 
 1. [幾何セミナー, 名古屋大学大学院 多元数理研究科](https://sites.google.com/site/geometryseminarnagoya/)にて、講演する予定です。
