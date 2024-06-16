@@ -22,9 +22,11 @@ SEMANTIC SCHOLAR: [Akira Kitaoka](https://www.semanticscholar.org/author/Akira-K
 
 Twitter: [@akitaoka-en](https://twitter.com/akitaoka_en)
 
-LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
+Zenn: [akira5kitaoka](https://zenn.dev/akira5kitaoka)
 
 Qiita: [akira5kitaoka](https://qiita.com/akira5kitaoka)
+
+LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 ## 今後の予定
 
