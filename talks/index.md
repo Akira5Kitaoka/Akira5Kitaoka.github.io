@@ -3,6 +3,8 @@
 
 ### 研究集会・セミナー・ポスター発表
 
+[15] 北岡　旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [IBIS2024](https://ibisml.org/ibis2024/posters/), 1-086, 2024年11月6日.
+
 [14] 北岡　旦, 江藤　力, 混合整数線形計画の逆問題におけるSuboptimality損失と予測損失の等価性 (Japanese), [JSAI2024](https://confit.atlas.jp/guide/event/jsai2024/subject/1F3-GS-1-02/date?cryptoId=), \[1F3-GS-1-02\], 2024年5月28日.
 
 [13] 北岡　旦, 江藤　力, 逆最適化に対するsuboptimality損失を用いた模倣性 (Japanese), [IBIS2023](https://ibisml.org/ibis2023/), 1-086, 2023年10月30日.
