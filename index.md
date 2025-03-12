@@ -30,7 +30,7 @@ LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 ## 今後の予定
 
-1. 「混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム」というタイトルで，[第3回 MfIP連携探索ワークショップ](https://sites.google.com/view/mfip-matching250314/%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%AC%9B%E6%BC%94), [1], 2025年3月14日にて、ポスター講演する予定です．
+1. 「混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム」というタイトルで，[第3回 MfIP連携探索ワークショップ](https://sites.google.com/view/mfip-matching250314/%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%AC%9B%E6%BC%94), 1, 2025年3月14日にて、ポスター講演する予定です．
 
 <!-- 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。 -->
 
