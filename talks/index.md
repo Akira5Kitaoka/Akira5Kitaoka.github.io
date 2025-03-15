@@ -3,6 +3,8 @@
 
 ### 研究集会・セミナー・ポスター発表
 
+[17] 北岡　旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム(Japanese)，[第3回 MfIP連携探索ワークショップ](https://sites.google.com/view/mfip-matching250314/%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%AC%9B%E6%BC%94), 1, 2025年3月14日．
+
 [15] 北岡　旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [IBIS2024](https://ibisml.org/ibis2024/posters/), 1-086, 2024年11月6日.
 
 [14] 北岡　旦, 江藤　力, 混合整数線形計画の逆問題におけるSuboptimality損失と予測損失の等価性 (Japanese), [JSAI2024](https://confit.atlas.jp/guide/event/jsai2024/subject/1F3-GS-1-02/date?cryptoId=), \[1F3-GS-1-02\], 2024年5月28日.
@@ -32,3 +34,7 @@
 [2] 北岡　旦, 球面上のRumin-Seshadri捩率関数, [数理新人セミナー](https://sites.google.com/view/math-graduate/MATHSCI-FRESHMAN-SEMINAR/2018), 京都大学, 2018年2月13日.
 
 [1] 北岡　旦，論文紹介その２(Poletsky Theoryとその応用), 複素解析幾何のポテンシャル論的諸相(Potential Theoretical Aspects of Complex Analytic Geometry), 東京大学数理科学研究所, 2016年2月12日.
+
+### その他
+
+[16] 北岡　旦, 数理科学の視点からみるNEC(Japanese), [数理キャリアデザインセミナー・情報交換会2024](https://www.ms.u-tokyo.ac.jp/career/cds2024_program.html), 東京大学数理科学研究所, 2024年12月3日. (招待講演)
