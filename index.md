@@ -30,7 +30,11 @@ LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 ## 今後の講演予定
 
-（公開できる中では）いまのところなし．
+[19] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), \[2L4-GS-1-05\], 2024年5月28日.
+
+[18] 北岡 旦, 岡嶋 穣，佐々木 耀一，高野 凜，曲線のエネルギー最小化による経路に基づく反実仮想説明 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced), \[1Win4-97\], 2024年5月27日.
+
+<!--（公開できる中では）いまのところなし．-->
 
 <!-- 1. [Princeton-Tokyo workshop on Geometric Analysis](https://sites.google.com/view/princeton-tokyo-ga-2020)にて、講演する予定です。 -->
 
