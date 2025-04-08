@@ -26,7 +26,7 @@ Google Scholar：[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user
 
 SEMANTIC SCHOLAR: [Akira Kitaoka](https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525)
 
-Twitter: [@akitaoka-en](https://twitter.com/akitaoka_en)
+X: [@akitaoka-en](https://twitter.com/akitaoka_en)
 
 Zenn: [akira5kitaoka](https://zenn.dev/akira5kitaoka)
 
