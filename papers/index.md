@@ -15,6 +15,9 @@
 
 ### 論文
 
+[8] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
+[[arXiv:2504.15566](https://arxiv.org/abs/2504.15566)]
+
 [4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, preprint.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
