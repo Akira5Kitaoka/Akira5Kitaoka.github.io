@@ -34,6 +34,12 @@ Qiita: [akira5kitaoka](https://qiita.com/akira5kitaoka)
 
 LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
+## ニュース
+
+以下の論文をarXivに投稿しました．
+[8] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
+[[arXiv:2504.15566](https://arxiv.org/abs/2504.15566)]
+
 ## 今後の講演予定
 
 [19] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), \[2L4-GS-1-05\], 2025年5月28日.
