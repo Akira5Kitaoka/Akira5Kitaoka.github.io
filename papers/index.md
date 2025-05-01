@@ -18,14 +18,14 @@
 [8] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
 [[arXiv:2504.15566](https://arxiv.org/abs/2504.15566)]
 
-[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka. Math. J., to be appeared.
+[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka Mathematical Journal, to be appeared.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
 [3] Akira Kitaoka, Ray-Singer Torsion and the Rumin Laplacian on lens spaces, 	
-SIGMA 18 (2022), 091, 16 pages.
+Symmetry, Integrability and Geometry: Methods and Applications (SIGMA) 18 (2022), 091, 16 pages.
 [[article link](https://doi.org/10.3842/SIGMA.2022.091)][[arXiv:2009.03276](https://arxiv.org/abs/2009.03276)]
 
-[1] Akira Kitaoka, Analytic torsions associated with the Rumin complex on contact spheres, Internat. J. Math. 31 (2020), no. 13, 2050112.
+[1] Akira Kitaoka, Analytic torsions associated with the Rumin complex on contact spheres, International Journal of Mathematics 31 (2020), no. 13, 2050112.
 [[article link](https://www.worldscientific.com/doi/10.1142/S0129167X20501128)]
 [[arXiv:1911.03092](https://arxiv.org/abs/1911.03092)]
 
