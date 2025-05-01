@@ -36,6 +36,11 @@ LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 ## ニュース
 
+- 以下の論文が受理されました．(2025年5月1日)
+
+[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka. Math. J., to be appeared.
+[[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
+
 - 以下の論文をarXivに投稿しました．(2025年4月23日)
 
 [8] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
