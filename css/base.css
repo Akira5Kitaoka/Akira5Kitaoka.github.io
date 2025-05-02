@@ -1,6 +1,6 @@
 .box-img,
 .box-text{
-  display: flex;
+  display: inline-block;
 }
 .contents{
   display: flex;
