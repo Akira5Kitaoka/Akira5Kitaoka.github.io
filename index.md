@@ -7,7 +7,7 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 <div class="box">
   <div class="box-text">
     <b>現所属</b>：日本電気株式会社　研究員<br>
-  </dvi>
+  </div>
   <div class="box-img">
     <img src="images/20210810-2.png" width="30%" alt="Akira Kitaoka">
   </div>
