@@ -1,4 +1,5 @@
-.box-img,
+.box-img{},
 .box-text{
   display: inline-block;
+  line-height: 150%;
 }
