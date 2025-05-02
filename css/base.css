@@ -2,3 +2,6 @@
 .box-text{
   display: flex;
 }
+.contents{
+  display: flex;
+}
