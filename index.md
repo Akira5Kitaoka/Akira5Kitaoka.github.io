@@ -2,7 +2,7 @@
 
 The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.github.io/).
 
-<img src="images/20210810-2.png" width="30%">
+<img src="images/20210810-2.png" width="30%" alt="Akira Kitaoka" aligh="left">
 
 **現所属**：日本電気株式会社　研究員
 
