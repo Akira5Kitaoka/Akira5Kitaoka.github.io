@@ -14,7 +14,7 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 研究内容：与えられたデータが最適解になるような，(混合整数)線形計画法の目的関数の重みを推定する高速なアルゴリズムを開発しています．<br>
 </div>
 <div class="pict">
-<img src="images/20210810-2.png" width="30%" alt="Akira Kitaoka">
+<img src="images/20210810-2.png" width="100%" alt="Akira Kitaoka">
 </div>
 </div>
 
