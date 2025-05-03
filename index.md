@@ -7,7 +7,6 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 <div class="box">
 <div class="text">
 <b>現所属</b>：日本電気株式会社　研究員<br>
-<b>メール</b>：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)<br>
 <b>研究分野1 (情報科学&数理科学)</b>：反実仮想説明、XAI(説明可能性AI)、機械学習，数値解析，微分幾何<br>
 研究内容：反実仮想説明，つまり「現時点での入力から，どう修正したら望む出力が得られるか」を説明するAIに関して研究しています．<br>
 <b>研究分野2 (情報科学)</b>：逆最適化、数理最適化、機械学習<br>    
@@ -38,6 +37,8 @@ Zenn: [akira5kitaoka](https://zenn.dev/akira5kitaoka)
 Qiita: [akira5kitaoka](https://qiita.com/akira5kitaoka)
 
 LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
+
+メール：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)<br>
 
 ## ニュース
 
