@@ -19,6 +19,7 @@ body {
 .pict {
   width: 30%;
   margin-right: 3%;
+  text-align:center;
 }
 
 .pict img {
