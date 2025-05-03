@@ -67,8 +67,3 @@ LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 <!-- 1. [幾何セミナー, 名古屋大学大学院 多元数理研究科](https://sites.google.com/site/geometryseminarnagoya/)にて，講演する予定です。 -->
 
-## その他
-
-(旧)**研究分野(数学)**：接触幾何，放物型幾何，幾何解析
-
-研究内容：現在の中心的な研究課題は，de Rham複体で定義される不変量や概念などを，接触幾何や放物型幾何で見られるBernstein-Gelfand-Gelfand複体でも同様に定義し，この二つの関係を明らかにすることで，幾何学的な制約条件を見つけることです。
