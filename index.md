@@ -5,7 +5,7 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 北岡 旦 / Akira KITAOKA
 
 <div class="box">
-<div class="box-text">
+<div class="text">
 <b>現所属</b>：日本電気株式会社　研究員<br>
 <b>メール</b>：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)<br>
 <b>研究分野1 (情報科学&数理科学)</b>：反実仮想説明、XAI(説明可能性AI)、機械学習，数値解析，微分幾何<br>
@@ -13,7 +13,7 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 <b>研究分野2 (情報科学)</b>：逆最適化、数理最適化、機械学習<br>    
 研究内容：与えられたデータが最適解になるような，(混合整数)線形計画法の目的関数の重みを推定する高速なアルゴリズムを開発しています．<br>
 </div>
-<div class="box-img">
+<div class="pict">
 <img src="images/20210810-2.png" width="30%" alt="Akira Kitaoka">
 </div>
 </div>
