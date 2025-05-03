@@ -52,7 +52,7 @@ LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 - 以下の論文をarXivに投稿しました．(2025年4月23日)
 
-[9] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
+[10] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
 [[arXiv:2504.15566](https://arxiv.org/abs/2504.15566)]
 
 - [JSAI2025](https://www.ai-gakkai.or.jp/jsai2025/)に参加します．以下を発表する予定です．
