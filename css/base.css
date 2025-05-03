@@ -15,13 +15,13 @@ body {
 }
 
 .text {
-  text-align: right;
+  text-align: left;
 }
 
 
 .pict {
   width: 30%;
-  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .pict img {
