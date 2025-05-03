@@ -136,7 +136,6 @@ Rumin複体: 接触多様体に関するBernstein-Gelfand-Gelfand複体(BGG複�
 
 修士の頃に始めた研究である．Rumin複体を使って定義される偏微分作用素として，Rumin Laplacianの他に，Rumin-Seshadri Laplacianがある．目標として，Rumin-Sesahdriが$3$次元$S^1$作用付き佐々木多様体上でRumin-Seshadri Laplacianの解析的捩率と(Hodge-de Rham Laplacianの)解析的捩率が一致するから，高次元の佐々木多様体でも証明できると思って研究を始めた．修士2年の8月にRumin-Seshadri Laplacianの固有値を球面上で計算できた．そこで，解析的捩率に対応するものを計算したら，解析的捩率と一致せず，なぜずれるのか，わからなかった．指導教員である平地先生に相談したところ**「定義を見返すのです」**というアドバイスが印象的で，定義をみなおしたら，博士1年の8月に，Rumin Laplacianの球面上の固有値がシンプルな式で書ける事に気づき，Rumin Laplacianの解析的捩率と(Hodge-de Rham Laplacianの)解析的捩率のズレを計算することができた．
 </details>
-<br>
 
 [<a id="K3">3</a>] Akira Kitaoka, Ray-Singer Torsion and the Rumin Laplacian on lens spaces, 	
 Symmetry, Integrability and Geometry: Methods and Applications (SIGMA) 18 (2022), 091, 16 pages.
@@ -146,7 +145,6 @@ Symmetry, Integrability and Geometry: Methods and Applications (SIGMA) 18 (2022)
 
 Littlewood-Richardson則を使って，Lens空間上のRuminラプラシアンの固有値を表現論の指標の計算に帰着させたのがポイント．これが博論になった．
 </details>
-<br>
 
 [<a id="K4">4</a>] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka Journal of Mathematics, to appear.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
@@ -155,7 +153,6 @@ Littlewood-Richardson則を使って，Lens空間上のRuminラプラシアン�
 
 博士課程の頃にはできていた．とりあえず，論文にしたほうがよいということで書いた．
 </details>
-<br>
 
 [<a id="K7">7</a>] Akira Kitaoka, Ray-Singer torsion and the Rumin Laplacian on lens spaces, [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2268.html), 京都大学数理解析研究所講究録, 2023年11月. [発表原稿](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2268-10.pdf)
 
@@ -163,7 +160,6 @@ Littlewood-Richardson則を使って，Lens空間上のRuminラプラシアン�
 
 と思っている．
 </details>
-<br>
 
 [<a id="AQ22">AQ22</a>] P. Albin, H. Quan, Sub-Riemannian limit of the differential form heat kernels of contact manifolds, Int. Math. Res. Not. 2022 (2022), 5818–5881.
 
