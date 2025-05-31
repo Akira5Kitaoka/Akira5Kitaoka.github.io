@@ -42,7 +42,7 @@ Symmetry, Integrability and Geometry: Methods and Applications (SIGMA) 18 (2022)
 
 ### 査読なし論文
 
-[7] Akira Kitaoka, Ray-Singer torsion and the Rumin Laplacian on lens spaces, [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2268.html), 京都大学数理解析研究所講究録, 2023年11月. [発表原稿](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2268-10.pdf)
+[7] Akira Kitaoka, Ray-Singer torsion and the Rumin Laplacian on lens spaces, [幾何構造と微分方程式 — 対称性・特異性及び量子化の視点から —](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2268.html), 京都大学数理解析研究所講究録, 2023年11月. [[発表原稿](https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2268-10.pdf)]
 
 [2] 北岡旦, 購買記録から行動予測, 数理科学実践研究レター, 2021-1, August 23, 2021.
 <!--
