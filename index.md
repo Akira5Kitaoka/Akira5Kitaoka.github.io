@@ -45,11 +45,15 @@ LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
 
 ## ニュース
 
+- [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/)に参加し，発表する予定です．(2025年9月12日)
+
+[16] 北岡 旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/), 2025年9月12日.
+
 - [JSAI2025](https://www.ai-gakkai.or.jp/jsai2025/)に参加し，以下を発表しました．(2025年5月30日)
 
-[11] 北岡 旦, 岡嶋 穣，佐々木 耀一，高野 凜，曲線のエネルギー最小化による経路に基づく反実仮想説明 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced), 1Win4-97, 2025年5月27日. \[[正誤表](./papers/JSAI2025_energy_minimization_CE/JSAI_energy_minimization_CE_errata.pdf)\]
+[11] 北岡 旦, 岡嶋 穣，佐々木 耀一，高野 凜，曲線のエネルギー最小化による経路に基づく反実仮想説明 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced), 1Win4-97, 2025年5月27日. \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1Win497/_article/-char/ja/)\] \[[正誤表](./papers/JSAI2025_energy_minimization_CE/JSAI_energy_minimization_CE_errata.pdf)\]
 
-[12] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), 2L4-GS-1-05, 2025年5月28日.
+[12] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), 2L4-GS-1-05, 2025年5月28日.  \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2L4GS105/_article/-char/ja/)\]
 
 - 以下の論文が受理されました．(2025年5月1日)
 
