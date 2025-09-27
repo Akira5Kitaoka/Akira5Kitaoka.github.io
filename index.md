@@ -3,11 +3,13 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 # 自己紹介
 
 
-
+　
 <div class="box">
 <div class="text">
 <b>現所属</b>：日本電気株式会社　研究員<br>
-<b>メール</b>：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)<br>
+<b>住所</b>：〒222-8666 神奈川県川崎市中原区下沼部1753<br>
+<b>メール1</b>：akira-kitaoka(^^)nec.com ((^^)をアットマークに変えてください)<br>
+<b>メール2</b>：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)<br>
 <b>研究分野1 (情報科学&数理科学)</b>：反実仮想説明，XAI(説明可能性AI)，機械学習，数値解析，微分幾何<br>
 研究内容：反実仮想説明，つまり「現時点での入力から，どう修正したら望む出力が得られるか」を説明するAIに関して研究しています．<br>
 <b>研究分野2 (情報科学&数理科学)</b>：逆最適化，数理最適化，機械学習<br>    
