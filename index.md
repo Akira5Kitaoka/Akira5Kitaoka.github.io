@@ -77,12 +77,12 @@ Q. エルディッシュ数はいくつですか？
 
 A. 5以下です．
 
-Akira Kitaoka --> Yuzuru Okajima [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced)
+Akira Kitaoka $\to$ Yuzuru Okajima [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced)
 
-Yuzuru Okajima --> Kenji Fukumizu [Pattern Recognition Letters](https://www.sciencedirect.com/science/article/pii/S0167865521003044)
+Yuzuru Okajima $\to$ Kenji Fukumizu [Pattern Recognition Letters](https://www.sciencedirect.com/science/article/pii/S0167865521003044)
 
-Kenji Fukumizu --> Marco Cuturi [Journal of Machine Learning Research](https://www.jmlr.org/papers/volume6/cuturi05a/cuturi05a.pdf)
+Kenji Fukumizu $\to$ Marco Cuturi [Journal of Machine Learning Research](https://www.jmlr.org/papers/volume6/cuturi05a/cuturi05a.pdf)
 
-Marco Cuturi --> David M. Avis [Journal of Machine Learning Research](https://www.jmlr.org/papers/volume15/cuturi14a/cuturi14a.pdf)
+Marco Cuturi $\to$ David M. Avis [Journal of Machine Learning Research](https://www.jmlr.org/papers/volume15/cuturi14a/cuturi14a.pdf)
 
-David M. Avis --> Paul Erdős [Graphs and Combinatorics](https://link.springer.com/article/10.1007/BF01864161)
+David M. Avis $\to$ Paul Erdős [Graphs and Combinatorics](https://link.springer.com/article/10.1007/BF01864161)
