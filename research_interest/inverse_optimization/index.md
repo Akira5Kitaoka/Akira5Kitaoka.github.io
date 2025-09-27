@@ -20,8 +20,11 @@
 
 **課題**: 既存の手法では解の予測誤差を最小化するのに効率が悪く，特に高次元の場合次元の影響を受ける．素朴な方法として，
 $$
+\begin{equation*}
     \Delta^{d-1} := \left\{ \phi \in \mathbb{R}_{\geq 0 }^d \middle| \sum_i \phi_i =1 \right\}
-$$から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
+\end{equation*}
+$$
+から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
 
 
 | 手法 | $\| \phi_k - \phi^* \|$ ※学習未完了の場合 |
@@ -37,26 +40,30 @@ $$から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA
 与えられた解を模倣するために，
 suboptimality損失
 $$
+\begin{equation*}
     \ell_{\mathrm{sub}} (\phi) := \frac{1}{N} \sum_{n=1}^N \left( \phi^{ \intercal} a(\phi , s^{(n)} ) - \phi^{ \intercal} a^{(n)} \right) 
+\end{equation*}
 $$
 を最小化すればよいことを説明する．
 Suboptimality損失は区分線形(Lipschitz)で凸であり,
 劣勾配が
 $$
+\begin{equation*}
     g (\phi) = \frac{1}{N}
     \sum_{n=1}^N 
     \left(
         a ( \phi , s^{(n)} )
         -
         a^{(n)}
-    \right)     
+    \right)    
+\end{equation*} 
 $$
 という性質を持つ．
 劣勾配$g$は解の予測誤差に現れるノルムの中身の平均を取ったものである．解の予測誤差が最小値である$0$になることと劣勾配$g$が$0$になることは同値である[補題 5.11, [8](#K8)]．
 劣勾配$g$が$0$を達成することと，suboptimality損失が最小値を達成することは同値だとする．
 このとき，解の予測誤差が最小値$0$を達成することと，suboptimality損失が最小値を達成することは同値だとしてよい．
 
-Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$\{ \alpha_k \}\_k \subset \mathbb{R}\_{>0}$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
+Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$\left\{ \alpha_k \right\}\_{k} \subset \mathbb{R}\_{>0}$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
 
 [アルゴリズム1](#alg:1)に
 学習率を$
@@ -80,7 +87,7 @@ $
 2. For $k = 1, \ldots, K-1$：
     1. $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
     2. $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
-3. $\phi_K^{\mathrm{best}} \in \arg\min_{\phi \in \{\phi_k\}_{k=1}^K} \ell_{\mathrm{sub}}(\phi)$ を出力
+3. $\phi\_K^{\mathrm{best}} \in \arg\min\_{\phi \in \{\phi_k\}\_{k=1}^K} \ell_{\mathrm{sub}}(\phi)$ を出力
 
 ## 参考文献
 
