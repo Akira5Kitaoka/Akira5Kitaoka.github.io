@@ -1,4 +1,4 @@
-<a href="{{ '/research_interest/inverse_optimization' | relative_url }}">研究紹介に戻る</a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
 
 # 最短測地線近似アルゴリズム
 
@@ -34,3 +34,5 @@
 </details>
 <br>
 -->
+
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>

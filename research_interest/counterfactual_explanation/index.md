@@ -1,4 +1,4 @@
-<a href="{{ '/research_interest/inverse_optimization' | relative_url }}">研究紹介に戻る</a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
 
 # 曲線のエネルギー最小化による経路に基づく反実仮想説明
 
@@ -24,3 +24,5 @@
 ## 参考文献
 
 [<a id="K11">11</a>] 北岡 旦, 岡嶋 穣，佐々木 耀一，高野 凜，曲線のエネルギー最小化による経路に基づく反実仮想説明 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced), (2025年5月27日), 1Win4-97, to appear.
+
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
