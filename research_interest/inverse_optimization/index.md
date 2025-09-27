@@ -69,7 +69,7 @@ $$
 劣勾配$g$が$0$を達成することと，suboptimality損失が最小値を達成することは同値だとする．
 このとき，解の予測誤差が最小値$0$を達成することと，suboptimality損失が最小値を達成することは同値だとしてよい．
 
-Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$\left\{ \alpha_k \right\} \_{k} \subset \mathbb{R}_{>0}$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
+Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$\left\{ \alpha_k \right\} {}\_{k} \subset \mathbb{R} \_{>0}$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
 
 [アルゴリズム1](#alg:1)に
 学習率を$
