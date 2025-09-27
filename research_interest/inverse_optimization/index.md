@@ -69,7 +69,7 @@ $$
 劣勾配$g$が$0$を達成することと，suboptimality損失が最小値を達成することは同値だとする．
 このとき，解の予測誤差が最小値$0$を達成することと，suboptimality損失が最小値を達成することは同値だとしてよい．
 
-Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$\left\{ \alpha_k \right\} {}_{k} \subset \mathbb{R} {}_{>0}$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
+Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$\left\{ \alpha_k \right\}_ {k} \subset \mathbb{R}_ {>0}$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
 
 [アルゴリズム1](#alg:1)に
 学習率を$
@@ -93,7 +93,7 @@ $
 2. For $k = 1, \ldots, K-1$：
     1. $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
     2. $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
-3. $\phi\_K^{\mathrm{best}} \in \arg\min_{\phi \in \left\{\phi_k \right\} {}_{k=1}^K} \ell_{\mathrm{sub}}(\phi)$ を出力
+3. $\phi^{\mathrm{best}}_ K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_ {k=1}} \ell_{\mathrm{sub}}(\phi)$ を出力
 
 ## 参考文献
 
