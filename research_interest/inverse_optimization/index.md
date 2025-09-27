@@ -18,7 +18,7 @@
 
 [[5](#K5), [8](#K8)] 順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画を含む，基本的かつ重要な問題を取り上げる．
 
-**課題**: 既存の手法では解の予測誤差を最小化するのに効率が悪く，特に高次元の場合次元の影響を受ける．素朴な方法として，$\Delta^{d-1} = \{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \}$から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
+**課題**: 既存の手法では解の予測誤差を最小化するのに効率が悪く，特に高次元の場合次元の影響を受ける．素朴な方法として，$\Delta^{d-1} = \left\{ \phi \in \mathbb{R}_{\geq 0 }^d \middle| \sum_i \phi_i =1 \right\}$から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
 
 
 | 手法 | $\| \phi_k - \phi^* \|$ ※学習未完了の場合 |
@@ -33,13 +33,13 @@
 
 与えられた解を模倣するために，
 suboptimality損失
-\begin{equation*}
+$$
     \ell_{\mathrm{sub}} (\phi) := \frac{1}{N} \sum_{n=1}^N \left( \phi^{ \intercal} a(\phi , s^{(n)} ) - \phi^{ \intercal} a^{(n)} \right) 
-\end{equation*}
+$$
 を最小化すればよいことを説明する．
 Suboptimality損失は区分線形(Lipschitz)で凸であり,
 劣勾配が
-\begin{equation}
+$$
     g (\phi) = \frac{1}{N}
     \sum_{n=1}^N 
     \left(
@@ -47,8 +47,7 @@ Suboptimality損失は区分線形(Lipschitz)で凸であり,
         -
         a^{(n)}
     \right)     
-    \label{eq:subgradient_suboptimality_loss}
-\end{equation}
+$$
 という性質を持つ．
 劣勾配$g$は解の予測誤差に現れるノルムの中身の平均を取ったものである．解の予測誤差が最小値である$0$になることと劣勾配$g$が$0$になることは同値である[補題 5.11, [8](#K8)]．
 劣勾配$g$が$0$を達成することと，suboptimality損失が最小値を達成することは同値だとする．
