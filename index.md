@@ -27,21 +27,18 @@ Akira KITAOKA
 
 ## リンク
 
-ORCiD：[0000-0002-3867-759X](https://orcid.org/0000-0002-3867-759X)
 
-researchmap：[R000085159](https://researchmap.jp/akira5kitaoka)
 
-Google Scholar：[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ)
-
-SEMANTIC SCHOLAR: [Akira Kitaoka](https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525)
-
-X: [@akitaoka-en](https://twitter.com/akitaoka_en)
-
-Zenn: [akira5kitaoka](https://zenn.dev/akira5kitaoka)
-
-Qiita: [akira5kitaoka](https://qiita.com/akira5kitaoka)
-
-LinkedIn: [Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)
+||リンク|
+|------|-------------------------|
+|ORCiD|[0000-0002-3867-759X](https://orcid.org/0000-0002-3867-759X)|
+|researchmap|[R000085159](https://researchmap.jp/akira5kitaoka)|
+|Google Scholar|[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ)|
+|SEMANTIC SCHOLAR|[Akira Kitaoka](https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525)|
+|X|[@akitaoka-en](https://twitter.com/akitaoka_en)|
+|Zenn|[akira5kitaoka](https://zenn.dev/akira5kitaoka)|
+|Qiita|[akira5kitaoka](https://qiita.com/akira5kitaoka)|
+|LinkedIn|[Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)|
 
 
 
