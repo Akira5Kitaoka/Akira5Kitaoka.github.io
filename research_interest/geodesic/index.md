@@ -1,5 +1,6 @@
-# 最短測地線近似アルゴリズム
+<a href="{{ '/research_interest/inverse_optimization' | relative_url }}">研究紹介に戻る</a>
 
+# 最短測地線近似アルゴリズム
 
 **キーワード**: 数値解析，測地線，数理最適化，最適制御
 

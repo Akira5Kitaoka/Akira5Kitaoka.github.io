@@ -1,3 +1,5 @@
+<a href="{{ '/research_interest/inverse_optimization' | relative_url }}">研究紹介に戻る</a>
+
 # 曲線のエネルギー最小化による経路に基づく反実仮想説明
 
 **キーワード**: 反実仮想説明，XAI(説明可能性AI)，機械学習，数値解析，微分幾何
