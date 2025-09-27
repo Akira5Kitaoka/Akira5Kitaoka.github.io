@@ -1,6 +1,14 @@
 北岡がどのようなことを主に研究してきたかを説明します．
 (2025年5月3日現在)
 
+今までに研究したテーマは以下です．（）
+- <a href="{{ '/reseach_interest/inverse_optimization' | relative_url }}" class="btn">逆最適化</a>
+- <a href="{{ '/reseach_interest/counterfactual_explanation' | relative_url }}">反実仮想説明</a>
+- 平均化データ学習 (工事中)
+- <a href="{{ '/reseach_interest/geodesic' | relative_url }}">有限差分法と数値積分を用いた実座標空間上の曲線のエネルギー最小化による長さ最小化の誤差評価</a>
+- <a href="{{ '/reseach_interest/bgg_complex' | relative_url }}">BGG複体を用いた放物型幾何学の不変量に関する研究</a>
+
+
 
 # 最短測地線近似アルゴリズム
 
