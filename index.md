@@ -44,6 +44,11 @@ Akira KITAOKA
 
 ## ニュース
 
+- 以下の論文をarXivに投稿しました．(2025年10月6日)
+
+[13] Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
+[[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
+
 - [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/)に参加し，発表しました．(2025年9月12日)
 
 [17] 北岡 旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/), 2025年9月12日.
@@ -59,10 +64,7 @@ Akira KITAOKA
 [4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka Journal of Mathematics, to appear.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
-- 以下の論文をarXivに投稿しました．(2025年4月23日)
 
-[10] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
-[[arXiv:2504.15566](https://arxiv.org/abs/2504.15566)]
 
 
 <!--（公開できる中では）いまのところなし．-->

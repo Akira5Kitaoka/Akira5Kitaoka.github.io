@@ -2,6 +2,9 @@
 
 ### プレプリント
 
+[13] Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
+[[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
+
 [8] Akira Kitaoka, A fast algorithm to minimize prediction loss of the optimal solution in inverse optimization problem of MILP, preprint.
 [[arXiv:2405.14273](https://arxiv.org/abs/2405.14273)]
 
