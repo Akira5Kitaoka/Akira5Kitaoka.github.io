@@ -22,6 +22,8 @@ Akira KITAOKA<br>
 </div>
 </div>
 
+# リンク
+
 <a href='https://orcid.org/0000-0002-3867-759X' target='_blank'><img src="images/ORCID-iD_icon_32x32.png" height="20pt" alt="ORCiD"></a>
 <a href='https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ' target='_blank'><img src="images/Google_Scholar_logo.svg" height="20pt" alt="SEMANTIC SCHOLAR"></a>
 <a href='https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525' target='_blank'><img src="images/Semantic_scholar_logo.png" height="20pt" alt="SEMANTIC SCHOLAR"></a>
@@ -33,7 +35,7 @@ Akira KITAOKA<br>
 
 
 
-## ニュース
+# ニュース
 
 - 以下の論文をarXivに投稿しました．(2025年10月6日)
 
@@ -67,7 +69,7 @@ Akira KITAOKA<br>
 
 
 
-## しつもんコーナー
+# しつもんコーナー
 
 Q. エルディッシュ数はいくつですか？
 
