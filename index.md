@@ -19,14 +19,14 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 <img src="images/20210810-2.png" width="100%" alt="Akira Kitaoka"><br>
 北岡 旦<br> 
 Akira KITAOKA<br>
-<a href='https://orcid.org/0000-0002-3867-759X' target='_blank'><img src="images/ORCID-iD_icon_32x32.png" height="20pt" alt="ORCiD"></a>
-<a href='https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ' target='_blank'><img src="images/Google_Scholar_logo.svg" height="20pt" alt="SEMANTIC SCHOLAR"></a>
-<a href='https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525' target='_blank'><img src="images/Semantic_scholar_logo.png" height="20pt" alt="SEMANTIC SCHOLAR"></a>
-<a href='https://twitter.com/akitaoka_en' target='_blank'><img src="images/logo-black.png" height="20pt" alt="X"></a>
-<a href='https://zenn.dev/akira5kitaoka' target='_blank'><img src="images/zenn-logo-only.svg" height="20pt" alt="Zenn"></a>
-<a href='https://www.linkedin.com/in/akira-kitaoka-42a84425b/' target='_blank'><img src="images/LI-In-Bug.png" height="20pt" alt="LinkedIn"></a>
+<a href='https://orcid.org/0000-0002-3867-759X' target='_blank'><img src="images/ORCID-iD_icon_32x32.png" width="16.7%" alt="ORCiD"></a>
+<a href='https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ' target='_blank'><img src="images/Google_Scholar_logo.svg" width="16.7%" alt="SEMANTIC SCHOLAR"></a>
+<a href='https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525' target='_blank'><img src="images/Semantic_scholar_logo.png" width="16.7%" alt="SEMANTIC SCHOLAR"></a>
+<a href='https://twitter.com/akitaoka_en' target='_blank'><img src="images/logo-black.png" width="16.7%" alt="X"></a>
+<a href='https://zenn.dev/akira5kitaoka' target='_blank'><img src="images/zenn-logo-only.svg" width="16.7%" alt="Zenn"></a>
+<a href='https://www.linkedin.com/in/akira-kitaoka-42a84425b/' target='_blank'><img src="images/LI-In-Bug.png" width="16.7%" alt="LinkedIn"></a>
 <br>
-<a href='https://researchmap.jp/akira5kitaoka' target='_blank'><img title='researchmap' height=40pt alt='researchmap' src='https://researchmap.jp/outline/img/researchmap130.gif' /></a>
+<a href='https://researchmap.jp/akira5kitaoka' target='_blank'><img title='researchmap' width="100%" alt='researchmap' src='https://researchmap.jp/outline/img/researchmap130.gif' /></a>
 </div>
 </div>
 
