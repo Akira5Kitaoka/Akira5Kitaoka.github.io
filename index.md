@@ -37,14 +37,15 @@ Akira KITAOKA<br>
 
 # ニュース
 
+- [IBIS2025](https://ibisml.org/ibis2025/posters/)に参加し，発表します．(2025年10月11日)
+
+[18] 北岡 旦, Inverse Mixed-Integer Programming: Learning of Constraints then Objective Functions (Japanese), [IBIS2025](https://ibisml.org/ibis2025/posters/), 2025年11月12日.
+
+
 - 以下の論文をarXivに投稿しました．(2025年10月6日)
 
 [13] Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
 [[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
-
-- [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/)に参加し，発表しました．(2025年9月12日)
-
-[17] 北岡 旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/), 2025年9月12日.
 
 - [JSAI2025](https://www.ai-gakkai.or.jp/jsai2025/)に参加し，以下を発表しました．論文が公開されました．(2025年7月1日)
 
