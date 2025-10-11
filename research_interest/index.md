@@ -22,7 +22,7 @@
 - 有限差分法と数値積分を用いた実座標空間上の曲線のエネルギー最小化による長さ最小化の誤差評価の研究をしていました．
 - <a href="{{ '/research_interest/geodesic' | relative_url }}">詳細</a>
     
-## BGG複体を用いた放物型幾何学の不変量に関する研究
+## BGG複体を用いた放物型幾何学の不変量
 - De Rham複体で定義される不変量や概念などを，接触幾何や放物型幾何で見られるBernstein-Gelfand-Gelfand複体(BGG複体)でも同様に定義し，この二つの関係を明らかにすることで，幾何学的な制約条件を見つける研究をしていました．
 - <a href="{{ '/research_interest/bgg_complex' | relative_url }}">詳細</a>
 
