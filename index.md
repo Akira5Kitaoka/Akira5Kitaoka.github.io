@@ -18,7 +18,15 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 <div class="pict">
 <img src="images/20210810-2.png" width="100%" alt="Akira Kitaoka"><br>
 北岡 旦<br> 
-Akira KITAOKA
+Akira KITAOKA<br>
+<a href='https://orcid.org/0000-0002-3867-759X' target='_blank'><img src="images/ORCID-iD_icon_32x32.png" height="20pt" alt="ORCiD"></a>
+<a href='https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ' target='_blank'><img src="images/Google_Scholar_logo.svg" height="20pt" alt="SEMANTIC SCHOLAR"></a>
+<a href='https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525' target='_blank'><img src="images/Semantic_scholar_logo.png" height="20pt" alt="SEMANTIC SCHOLAR"></a>
+<a href='https://twitter.com/akitaoka_en' target='_blank'><img src="images/logo-black.png" height="20pt" alt="X"></a>
+<a href='https://zenn.dev/akira5kitaoka' target='_blank'><img src="images/zenn-logo-only.svg" height="20pt" alt="Zenn"></a>
+<a href='https://www.linkedin.com/in/akira-kitaoka-42a84425b/' target='_blank'><img src="images/LI-In-Bug.png" height="20pt" alt="LinkedIn"></a>
+<br>
+<a href='https://researchmap.jp/akira5kitaoka' target='_blank'><img title='researchmap' height=40pt alt='researchmap' src='https://researchmap.jp/outline/img/researchmap130.gif' /></a>
 </div>
 </div>
 
@@ -56,21 +64,6 @@ Akira KITAOKA
 
 <!-- 1. [幾何セミナー, 名古屋大学大学院 多元数理研究科](https://sites.google.com/site/geometryseminarnagoya/)にて，講演する予定です。 -->
 
-
-## リンク
-
-
-
-||リンク|
-|------|-------------------------|
-|<img src="images/ORCID-iD_icon_32x32.png" height="20pt" alt="ORCiD">|[0000-0002-3867-759X](https://orcid.org/0000-0002-3867-759X)|
-|<img title='researchmap' height=40pt alt='researchmap' src='https://researchmap.jp/outline/img/researchmap130.gif' />|[R000085159](https://researchmap.jp/akira5kitaoka)|
-|<img src="images/Google_Scholar_logo.svg" height="20pt" alt="SEMANTIC SCHOLAR">|[Akira Kitaoka](https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ)|
-|<img src="images/Semantic_scholar_logo.png" height="20pt" alt="SEMANTIC SCHOLAR">|[Akira Kitaoka](https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525)|
-|<img src="images/logo-black.png" height="20pt" alt="X">|[@akitaoka-en](https://twitter.com/akitaoka_en)|
-|<img src="images/zenn-logo.png" height="20pt" alt="Zenn">|[akira5kitaoka](https://zenn.dev/akira5kitaoka)|
-|<img src="images/qiita_logo.png" height="20pt" alt="Qiita">|[akira5kitaoka](https://qiita.com/akira5kitaoka)|
-|<img src="images/LI-Logo.png" height="20pt" alt="LinkedIn">|[Akira Kitaoka](https://www.linkedin.com/in/akira-kitaoka-42a84425b/)|
 
 
 
