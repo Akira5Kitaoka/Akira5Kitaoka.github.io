@@ -37,9 +37,13 @@ Akira KITAOKA<br>
 
 # ニュース
 
-- [IBIS2025](https://ibisml.org/ibis2025/posters/)に参加し，発表します．(2025年10月11日現在)
+- [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html)にて，以下の松野竜太さんとの共著論文が受理されました．(2025年10月15日現在)
 
-[18] 北岡 旦, Inverse Mixed-Integer Programming: Learning of Constraints then Objective Functions (Japanese), [IBIS2025](https://ibisml.org/ibis2025/posters/), 2025年11月12日.
+[19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), to be appeared.
+
+- [IBIS 2025](https://ibisml.org/ibis2025/posters/)に参加し，発表します．(2025年10月11日現在)
+
+[18] 北岡 旦, Inverse Mixed-Integer Programming: Learning of Constraints then Objective Functions (Japanese), [IBIS 2025](https://ibisml.org/ibis2025/posters/), 2025年11月12日.
 
 
 - 以下の論文をarXivに投稿しました．(2025年10月6日現在)

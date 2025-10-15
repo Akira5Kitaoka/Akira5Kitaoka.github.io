@@ -14,6 +14,10 @@
 [5] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
 [[arXiv:2305.06137](https://arxiv.org/abs/2305.06137)]
 
+### 査読付き論文
+
+[19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), to be appeared.
+
 ### 査読なし会議
 
 [12] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), 2L4-GS-1-05, 2025年5月28日.  \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2L4GS105/_article/-char/ja/)\]
