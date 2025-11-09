@@ -8,9 +8,17 @@
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{
     color:#1E32A5
 }
-.project-name a,.project-name a:hover,.project-name a:visited{
-    color: inherit;
+.project-name a{
+    color: #444444;
 }
+.project-name a:hover{
+    color: #000000;
+}
+.project-name a:visited{
+    color: #444444;
+}
+
+
 table{
     width: 100%;
     border-collapse: collapse;
