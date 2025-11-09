@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 .page-header{
-    background-image:linear-gradient(to right, #1E32A5 0%, #04127C 100%); 
+    background-image:linear-gradient(to right, #0F1ED2 0%, #1E32A5 50%, #04127C 100%); 
 };
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{
     color:#1E32A5
