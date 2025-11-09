@@ -20,16 +20,16 @@ table tr{
     border-bottom: solid 2px white;
 }
 
-  table tr:last-child{
-    border-bottom: none;
-  }
+table tr:last-child{
+border-bottom: none;
+}
 
-  table th{
-    position: relative;
-    text-align: left;
-    width: 30%;
-    background-color: #b6b6b6;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
+table th{
+position: relative;
+text-align: left;
+width: 30%;
+background-color: #04127C;
+color: white;
+text-align: center;
+padding: 10px 0;
+}
