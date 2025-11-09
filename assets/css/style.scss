@@ -9,15 +9,20 @@
     color:#22373A
 }
 
+// メインコンテンツのテキスト色
+.main-content {
+  color: #22373A;
+}
+
 .main-content a{
-    color: #22373A;
+    color: #111B1D;
 }
 .main-content a:hover{
-    color: #111B1D;
+    color: #22373A;
     text-decoration: underline;
 }
 .main-content a:visited{
-    color: #22373A;
+    color: #111B1D;
 }
 
 
