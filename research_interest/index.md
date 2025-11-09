@@ -6,23 +6,23 @@
 今までに研究したテーマは以下です．
 ## 混合整数計画に対する逆最適化
 - 与えられたデータが最適解になるような，(混合整数)線形計画の目的関数の重みと制約条件を学習する高速なアルゴリズムを開発しています．
-- <a href="{{ '/research_interest/inverse_optimization' | relative_url }}">詳細>>></a>
+- <a href="{{ '/research_interest/inverse_optimization' | relative_url }}">詳細>></a>
 
 ## 反実仮想説明・アルゴリズミックリコース
 - 反実仮想説明，つまり「現時点での入力から，どう修正したら望む出力が得られるか」を説明するAIに関して研究しています．
 - 反実仮想説明の中でも，アクションを経路で提示する方法について，研究しています．
-- <a href="{{ '/research_interest/counterfactual_explanation' | relative_url }}">詳細>>></a>
+- <a href="{{ '/research_interest/counterfactual_explanation' | relative_url }}">詳細>></a>
 
 ## 平均化データ学習 
 - データの平均化をはじめとするデータ集約技術は，データ要約，圧縮，アノテーションコスト削減，データ品質向上，プライバシー保護に有用です．
 - 平均化されたデータから機械学習する方法について研究しています．
-- <a href="{{ '/research_interest/averaged_data' | relative_url }}">詳細>>></a>
+- <a href="{{ '/research_interest/averaged_data' | relative_url }}">詳細>></a>
 
 ## 最短測地線近似アルゴリズム
 - 有限差分法と数値積分を用いた実座標空間上の曲線のエネルギー最小化による長さ最小化の誤差評価の研究をしていました．
-- <a href="{{ '/research_interest/geodesic' | relative_url }}">詳細>>></a>
+- <a href="{{ '/research_interest/geodesic' | relative_url }}">詳細>></a>
     
 ## BGG複体を用いた放物型幾何学の不変量
 - De Rham複体で定義される不変量や概念などを，接触幾何や放物型幾何で見られるBernstein-Gelfand-Gelfand複体(BGG複体)でも同様に定義し，この二つの関係を明らかにすることで，幾何学的な制約条件を見つける研究をしていました．
-- <a href="{{ '/research_interest/bgg_complex' | relative_url }}">詳細>>></a>
+- <a href="{{ '/research_interest/bgg_complex' | relative_url }}">詳細>></a>
 

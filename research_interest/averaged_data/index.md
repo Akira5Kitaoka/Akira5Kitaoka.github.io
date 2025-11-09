@@ -1,4 +1,4 @@
-<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>>></a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
 
 # 平均化データ学習
 
@@ -27,4 +27,4 @@
 
 [<a id="Zhang2020">Zhang+ 20</a>] Zhang, Y., Charoenphakdee, N., Wu, Z., and Sugiyama, M.: Learning from Aggregate Observations, in Advances in Neural Information Processing Systems, Vol. 33 (2020)
 
-<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>>></a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
