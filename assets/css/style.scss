@@ -3,11 +3,12 @@
 
 @import "{{ site.theme }}";
 .page-header{
-    background-image:linear-gradient(to right, #0F1ED2 0%, #1E32A5 50%, #04127C 100%); 
+    background-image:linear-gradient(to right, #0090b2 0%, #22373A 20%, #22373A 80%, #E94709 100%); 
 };
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{
-    color:#1E32A5
+    color:#22373A
 }
+
 .project-name a{
     color: #444444;
 }
@@ -36,7 +37,7 @@ table th{
 position: relative;
 text-align: left;
 width: 30%;
-background-color: #04127C;
+background-color: #22373A;
 color: white;
 text-align: center;
 padding: 10px 0;
