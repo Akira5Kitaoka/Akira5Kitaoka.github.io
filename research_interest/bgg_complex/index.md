@@ -1,4 +1,4 @@
-<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>>></a>
 
 # BGG複体を用いた放物型幾何学の不変量に関する研究
 **キーワード**:  Rumin 複体，解析的捩率，接触幾何，放物型幾何，幾何解析
@@ -80,4 +80,4 @@ Littlewood-Richardson則を使って，Lens空間上のRuminラプラシアン�
 
 [<a id="Tac65">Tac65</a>] S. Tachibana, On harmonic tensors in compact Sasakian spaces, Tohoku Math. J. (2) 17 (1965), 271–284.
 
-<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>>></a>

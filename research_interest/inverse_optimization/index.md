@@ -1,4 +1,4 @@
-<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>>></a>
 
 # 混合整数計画問題の逆最適化問題
 
@@ -114,4 +114,4 @@ $
 </details>
 -->
 
-<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る</a>
+<a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>>></a>
