@@ -59,7 +59,7 @@ Akira KITAOKA<br>
 
 - (**2025年5月1日**) 以下の論文が受理されました．
 
-[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka Journal of Mathematics, to appear.
+[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, [Osaka Journal of Mathematics](http://www.math.sci.osaka-u.ac.jp/ojm/), to appear.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
 

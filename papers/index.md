@@ -36,7 +36,7 @@
 
 ### 査読付き論文
 
-[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, Osaka Journal of Mathematics, to appear.
+[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, [Osaka Journal of Mathematics](http://www.math.sci.osaka-u.ac.jp/ojm/), to appear.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
 [3] Akira Kitaoka, Ray-Singer Torsion and the Rumin Laplacian on lens spaces, 	
