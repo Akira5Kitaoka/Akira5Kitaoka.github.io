@@ -24,13 +24,17 @@
 $i = 1 , \ldots ,d $に対し，
 $h_i \colon \mathbb{R}^{\bullet} \to \mathbb{R}$は区分線形であるとする．
 集合$\mathcal{S}$を
+
 $$
     \mathcal{S} = \{ s = (A,b) \in  \mathbb{R}^{\bullet \times \bullet} \times \mathbb{R}^{\bullet} \}
 $$
+
 とし，$s \in \mathcal{S}$に対して集合
+
 $$
     X(s) := \{ x \in \mathbb{R}^{\bullet} \times \mathbb{Z}^{\bullet} | Ax \leq b\} 
 $$
+
 とする．
 確率単体$\Delta^{d-1} := \\{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \\} $
 とする．
@@ -54,18 +58,22 @@ $$
 
 順問題の逆最適化問題を定義する．
 データ$\mathcal{D} = \\{ (s^{(n)} , a^{(n)} ) \\}_{n=1}^N$は未知の真の重み$\phi^* $が存在し，
+
 $$
    s^{(n)} \in \mathcal{S} , 
    \quad a^{(n)} = a ( \phi^* , s^{(n)} )
    %\label{assu:data-follows-solver}  
 $$
+
 を満たすとする．
 この未知の重み$\phi^* $をデータ$\mathcal{D}$から推定する問題，つまり，解の予測誤差
+
 $$
 \begin{equation*}%\label{eq:def_minimization_PLS} 
     \ell_{\mathrm{pres}} (\phi) := \frac{1}{N}\sum_{n=1}^N \| a(\phi , s^{(n)} ) - a^{(n)} \|_2^2.
 \end{equation*}
 $$
+
 を最小化する問題を考える．
 
 **課題**: 既存の手法では解の予測誤差を最小化するのに効率が悪く，特に高次元の場合次元の影響を受ける．素朴な方法として，
