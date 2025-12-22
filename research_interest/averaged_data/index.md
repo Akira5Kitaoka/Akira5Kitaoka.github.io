@@ -7,9 +7,9 @@
 **課題**：複数サンプル間で平均化された入出力に対する機械学習手法
 として Ecological Regression が知られている [[Robinson 50](#Robinson1950), [Gelman+ 01](#Gelman2001)]. Ecological Regressionは, 平均化されたデータに対する予測誤差を用いて, 線形回帰モデルを学習する[[Bhowmik+ 16](#Bhomik2016)]. しかしながら, この訓練手法は非線形回帰モデルに対して不適当である. 我々の知る限り, 複数サンプル間で平均化された入出力データから一般的な非線形モデルを学習する手法は知られていない.
 
-**手法**: [[12](#K12)]は, 加法的等分散ガウスノイズと正規分布入力を仮定した上で平均化データに対する予測モデルの尤度を定式化し, Taylor 近似を用いて導出した近似尤度を最大化することで予測モデルを学習する. また, [[12](#K12)]はこの近似尤度の効率的な数値計算方法を理論解析に基づいて導出する.
+**手法**: [[12](#K12),[19](#19)]は, 加法的等分散ガウスノイズと正規分布入力を仮定した上で平均化データに対する予測モデルの尤度を定式化し, Taylor 近似を用いて導出した近似尤度を最大化することで予測モデルを学習する. また, [[12](#K12),[19](#19)]はこの近似尤度の効率的な数値計算方法を理論解析に基づいて導出する.
 
-**効果**: [[12](#K12)]は, 平均化されたデータから非線形モデルを学習する最初の手法として, 特に2サンプル平均化データを対象とした学習手法である．
+**効果**: [[12](#K12),[19](#19)]は, 平均化されたデータから非線形モデルを学習する最初の手法として, 特に2サンプル平均化データを対象とした学習手法である．
 
 
 
@@ -18,6 +18,8 @@
 ## 参考文献
 
 [<a id="K12">12</a>] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), 2L4-GS-1-05, 2025年5月28日.  \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2L4GS105/_article/-char/ja/)\]
+
+[<a id="K19">19</a>] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月13-16日. [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
 
 [<a id="Bhomik2016">Bhowmik+ 16</a>] Bhowmik, A., Ghosh, J., and Koyejo, O.: Sparse Parameter Recovery from Aggregated Data, inInternational Conference on Machine Learning (2016)
 
