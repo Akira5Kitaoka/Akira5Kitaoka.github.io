@@ -32,7 +32,7 @@ $$
     X(s) := \{ x \in \mathbb{R}^{\bullet} \times \mathbb{Z}^{\bullet} | Ax \leq b\} 
 $$
 とする．
-確率単体$\Delta^{d-1} := \{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \} $
+確率単体$\Delta^{d-1} := \\{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \\} $
 とする．
 順問題を以下で定義する．
 $$
