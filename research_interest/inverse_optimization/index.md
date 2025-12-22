@@ -35,6 +35,7 @@ $$
 確率単体$\Delta^{d-1} := \\{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \\} $
 とする．
 順問題を以下で定義する．
+
 $$
 \begin{equation*}
     \begin{split}
@@ -54,11 +55,9 @@ $$
 順問題の逆最適化問題を定義する．
 データ$\mathcal{D} = \\{ (s^{(n)} , a^{(n)} ) \\}_{n=1}^N$は未知の真の重み$\phi^*$が存在し，
 $$
-\begin{equation}
    s^{(n)} \in \mathcal{S} , 
    \quad a^{(n)} = a ( \phi^* , s^{(n)} )
    %\label{assu:data-follows-solver}  
-\end{equation}
 $$
 を満たすとする．
 この未知の重み$\phi^*$をデータ$\mathcal{D}$から推定する問題，つまり，解の予測誤差
