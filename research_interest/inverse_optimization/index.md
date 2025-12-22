@@ -83,7 +83,7 @@ $$
 から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
 
 
-| 手法 | $\| \phi_k - \phi^* \|$ ※学習未完了の場合 |
+| 手法 | $\| \phi_k - \phi^* \|$ ※解の予測誤差が$0$でない場合 |
 |------|-------------------------|
 | UPA | $O(k^{-1/(d-1)})$ |
 | RPA | $O_{\mathbb{P}}\left(\left( \frac{\log k}{k} \right)^{1/(d-1)}\right)$ |
@@ -147,7 +147,8 @@ $
 2. For $k = 1, \ldots, K-1$:
 3. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
 4. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
-5. $$\phi^{\mathrm{best}}_K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
+5. End For
+6. $$\phi^{\mathrm{best}}_K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
 
 ## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
 
