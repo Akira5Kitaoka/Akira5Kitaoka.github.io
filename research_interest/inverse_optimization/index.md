@@ -1,5 +1,7 @@
 <a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
 
+更新日：2025年12月22日
+
 # 混合整数計画問題の逆最適化問題
 
 **キーワード**: 逆最適化，数理最適化，組合せ最適化
@@ -12,9 +14,11 @@
 その後、逆最適化は広く研究されるようになり \citep{Ahuja2001-cv,Heuberger2004-zv,Chan2019-zg,Chan2023-qk}、交通 \citep{Bertsimas2015-kw}、電力システム \citep{Birge2017-il}、医療 \citep{Chan2022-uq} などのさまざまな分野に応用されてきた。  
 さらに、逆強化学習 \citep{Ng2000-sf} やコントラスト学習 \citep{Shi2023-nd} をはじめとするさまざまな機械学習手法の基礎としても発展している。
 -->
- 
 
-## 混合整数線形計画における目的関数の重みをを高速に解くアルゴリズムを提案したこと[[5](#K5), [8](#K8)]
+そこで，北岡がかかわった研究は以下である．
+- [1](#S1). 混合整数線形計画における目的関数の重みをを高速に解くアルゴリズムを提案したこと [[5](#K5), [8](#K8)]
+
+## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みをを高速に解くアルゴリズムを提案したこと[[5](#K5), [8](#K8)]
 
 **問題設定**: 順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画を含む，基本的かつ重要な問題を取り上げる．
 $i = 1 , \ldots ,d $に対し，
@@ -34,7 +38,7 @@ $$
 $$
 \begin{equation*}
     \begin{split}
-        x^* (\phi , s ) & \in \argmax_{x \in X (s)} \phi^{\intercal} h ( x ) \left( 
+        x^* (\phi , s ) & \in \mathrm{argmax}_{x \in X (s)} \phi^{\intercal} h ( x ) \left( 
         =
         \sum_{i=1}^d \phi_i h_i (x)
         \right)
@@ -48,11 +52,11 @@ $$
 $$
 
 順問題の逆最適化問題を定義する．
-データ$\mathcal{D} = \{ (s^{(n)} , a^{(n)} ) \}_{n=1}^N$は未知の真の重み$\phi^{*}$が存在し，
+データ$\mathcal{D} = \\{ (s^{(n)} , a^{(n)} ) \\}_{n=1}^N$は未知の真の重み$\phi^{*}$が存在し，
 $$
 \begin{equation}
    s^{(n)} \in \mathcal{S} , 
-   \quad a^{(n)} = a ( \phi^* , s^{(n)})
+   \quad a^{(n)} = a ( \phi^* , s^{(n)} )
    %\label{assu:data-follows-solver}  
 \end{equation}
 $$
