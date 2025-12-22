@@ -53,14 +53,14 @@ $$
 $$
 
 順問題の逆最適化問題を定義する．
-データ$\mathcal{D} = \\{ (s^{(n)} , a^{(n)} ) \\}_{n=1}^N$は未知の真の重み$\phi^*$が存在し，
+データ$\mathcal{D} = \\{ (s^{(n)} , a^{(n)} ) \\}_{n=1}^N$は未知の真の重み$\phi^* $が存在し，
 $$
    s^{(n)} \in \mathcal{S} , 
    \quad a^{(n)} = a ( \phi^* , s^{(n)} )
    %\label{assu:data-follows-solver}  
 $$
 を満たすとする．
-この未知の重み$\phi^*$をデータ$\mathcal{D}$から推定する問題，つまり，解の予測誤差
+この未知の重み$\phi^* $をデータ$\mathcal{D}$から推定する問題，つまり，解の予測誤差
 $$
 \begin{equation*}%\label{eq:def_minimization_PLS} 
     \ell_{\mathrm{pres}} (\phi) := \frac{1}{N}\sum_{n=1}^N \| a(\phi , s^{(n)} ) - a^{(n)} \|_2^2.
@@ -69,13 +69,7 @@ $$
 を最小化する問題を考える．
 
 **課題**: 既存の手法では解の予測誤差を最小化するのに効率が悪く，特に高次元の場合次元の影響を受ける．素朴な方法として，
-
-$$
-\begin{equation*}
-    \Delta^{d-1} := \left\{ \phi \in \mathbb{R}_{\geq 0 }^d \middle| \sum_i \phi_i =1 \right\}
-\end{equation*}
-$$
-
+確率単体$\Delta^{d-1}$
 から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
 
 
