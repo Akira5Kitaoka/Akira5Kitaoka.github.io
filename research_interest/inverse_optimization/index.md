@@ -147,7 +147,7 @@ $
 2. For $k = 1, \ldots, K-1$：
     1. $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
     2. $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
-3. $\phi^{\mathrm{best}}\_K \in$ $\arg\min\_{\phi \in \left\{\phi\_k \right\}^K\_{k=1}}$ $\ell_{\mathrm{sub}}(\phi)$ を出力
+3. $$\phi^{\mathrm{best}}_K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
 
 ## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
 
