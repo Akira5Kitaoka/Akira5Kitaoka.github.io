@@ -38,7 +38,7 @@ $$
 $$
 
 とする．
-確率単体$\Delta^{d-1} := \\{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \\} $
+確率単体$$\Delta^{d-1} := \{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \} $$
 とする．
 順問題を以下で定義する．
 
@@ -83,7 +83,7 @@ $$
 から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
 
 
-| 手法 | $\| \phi_k - \phi^* \|$ ※解の予測誤差が$0$でない場合 |
+| 手法 | $\left\|\left\| \phi_k - \phi^* \right\|\right\| $ ※解の予測誤差が$0$でない場合 |
 |------|-------------------------|
 | UPA | $O(k^{-1/(d-1)})$ |
 | RPA | $O_{\mathbb{P}}\left(\left( \frac{\log k}{k} \right)^{1/(d-1)}\right)$ |
@@ -128,16 +128,16 @@ Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられて�
 [アルゴリズム1](#alg:1)に
 学習率を$
    \alpha_k =
-    \ell_{\mathrm{sub}} (\phi_k ) / \| g (\phi_k ) \|^2  ,
+    \ell_{\mathrm{sub}} (\phi_k ) / \|\| g (\phi_k ) \| \|^2  ,
 $
 としたものをPSGDP,
 学習率を
 $
     \alpha_k = k^{-1/2}
     /
-        \left\|
+        \left\|\left\|
          g (\phi_k)
-        \right\|
+        \right\|\right\|
 $
 としたものをPSGD2とする．
 
