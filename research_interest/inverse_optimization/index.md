@@ -72,7 +72,7 @@ $$
 
 $$
 \begin{equation*}
-    \Delta^{d-1} := \left\\{ \phi \in \mathbb{R}_{\geq 0 }^d \middle| \sum_i \phi_i =1 \right\\}
+    \Delta^{d-1} := \left\{ \phi \in \mathbb{R}_{\geq 0 }^d \middle| \sum_i \phi_i =1 \right\}
 \end{equation*}
 $$
 
