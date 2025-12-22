@@ -145,7 +145,7 @@ $
 2. For $k = 1, \ldots, K-1$：
     1. $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
     2. $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
-3. $ \phi^{\mathrm{best}}_K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi) $ を出力
+3. $ \diplaystyle \phi^{\mathrm{best}}_K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi) $ を出力
 
 ## 参考文献
 
