@@ -16,9 +16,11 @@
 -->
 
 そこで，北岡がかかわった研究は以下である．
-- [1](#S1). 混合整数線形計画における目的関数の重みをを高速に解くアルゴリズムを提案したこと [[5](#K5), [8](#K8)]
+- [1](#S1). 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと [[5](#K5), [8](#K8)]
 
-## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みをを高速に解くアルゴリズムを提案したこと[[5](#K5), [8](#K8)]
+- [2](#S2). 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
+
+## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと[[5](#K5), [8](#K8)]
 
 **問題設定**: 順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画を含む，基本的かつ重要な問題を取り上げる．
 $i = 1 , \ldots ,d $に対し，
@@ -147,6 +149,16 @@ $
     2. $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
 3. $\phi^{\mathrm{best}}_K \in $ $\arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}}$ $\ell_{\mathrm{sub}}(\phi) $ を出力
 
+## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
+
+工事中
+
+<details><summary>詳細</summary>
+
+工事中
+</details>
+
+
 ## 参考文献
 
 [<a id="K5">5</a>] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
@@ -155,15 +167,15 @@ $
 [<a id="K8">8</a>] Akira Kitaoka, A fast algorithm to minimize prediction loss of the optimal solution in inverse optimization problem of MILP, preprint.
 [[arXiv:2405.14273](https://arxiv.org/abs/2405.14273)]
 
+
+[<a id="K13">13</a>]  Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
+[[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
+
+
 [<a id="sakaue2025online">Sakaue et. al. 2025</a>] S Sakaue, T Tsuchiya, H Bao, T Oki, Online Inverse Linear Optimization: Improved Regret Bound, Robustness to Suboptimality, and Toward Tight Regret Analysis, preprint.
 [[arXiv:2501.14349](https://arxiv.org/abs/2501.14349)]
 
 
-<!-- 
-<details><summary>詳細</summary>
 
-工事中
-</details>
--->
 
 <a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
