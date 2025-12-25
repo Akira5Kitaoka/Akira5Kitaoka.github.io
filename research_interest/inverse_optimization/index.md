@@ -173,8 +173,10 @@ $
 
 - **決定変数の集合** $\mathcal{X}$: 空でない $\mathbb{R}^{k}$ の部分集合
 
+- **目的関数のパラメータ集合** $\Theta$: 空でない $\mathbb{R}^{d}$ の部分集合
+
 - **確率単体**  
-  $$\Delta^{d-1} := \left\{ \phi = (\phi_i)_i \in \mathbb{R}_{\geq 0}^d \,\middle|\, \sum_i \phi_i = 1 \right\}$$
+  $$\Delta^{d-1} := \left\{ \theta = (\theta_i)_i \in \mathbb{R}_{\geq 0}^d \,\middle|\, \sum_i \theta_i = 1 \right\}$$
 
 - **(特徴量)関数** $f_i \colon \mathcal{X} \times \mathcal{S} \to \mathbb{R}$ ($i = 1, \ldots, d$): 区分線形関数
 
@@ -190,7 +192,7 @@ $
 - **実行可能集合** $\mathcal{X}(\phi, s)$ (制約条件の閾値 $\phi \in \Phi$, 状態 $s \in \mathcal{S}$ に対して): 
   $$\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$$
 
-$\theta \in \Delta^{d-1}$, $\phi \in \Phi$, $s \in \mathcal{S}$に対し，
+$\theta \in \Theta = \Delta^{d-1}$, $\phi \in \Phi$, $s \in \mathcal{S}$に対し，
 順問題を
 
 $$
