@@ -164,7 +164,7 @@ $
 |理論結果3|逆最適化の統計的学習理論の構築を行う．| 
 |実験結果|実験面では，決定変数が$100$ 個の整数線形計画であるスケジューリングにおいてでも学習できることを実証する．|
 
-このうち，問題の定式化と，提案手法，理論結果1に関して解説する．
+このうち，逆最適化問題の定式化と，提案手法，理論結果1に関して解説する．
 
 ### 問題設定
 順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画を含む，基本的かつ重要な問題を取り上げる．
@@ -221,10 +221,10 @@ $$
 順問題と逆最適化問題の違いを以下の表でまとめる．
 |順問題(最適化)|逆問題(逆最適化問題)|
 |---|---|
-|$\textcolor{#E94709}{x^* (\theta, \phi, s)} \in \mathbf{FOP} (\theta, \phi, s)$|$\hat{x} (s) \in \mathbf{FOP} (\textcolor{#E94709}{\theta}, \textcolor{#E94709}{\phi} , s)$|
+|$$\textcolor[HTML]{E94709}{x^* (\theta, \phi, s)} \in \mathbf{FOP} (\theta, \phi, s)$$|$$\hat{x} (s) \in \mathbf{FOP} (\textcolor[HTML]{E94709}{\theta}, \textcolor[HTML]{E94709}{\phi} , s)$$|
 
 - <span style="color: #E94709; ">朱色：未知</span>, 黒色：既知
-- $\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$
+- $$\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$$
 - $\mathbf{FOP} (\theta, \phi, s)
     :=
     \mathrm{arg max}_{x \in \mathcal{X} (\phi , s)} 
