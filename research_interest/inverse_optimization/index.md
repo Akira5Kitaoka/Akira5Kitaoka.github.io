@@ -142,7 +142,7 @@ $
 としたものをPSGD2とする．
 
 
-> <a id="alg:1">アルゴリズム1</a>: suboptimality損失最小化 [アルゴリズム1, [5](#K5)]
+> **<a id="alg:1">アルゴリズム1</a>**: suboptimality損失最小化 [アルゴリズム1, [5](#K5)]
 > 1. $\phi_1 = \left(\frac{1}{d}, \ldots, \frac{1}{d}\right) \in \Delta^{d-1}$ で初期化
 > 2. For $k = 1, \ldots, K-1$:
 > 3. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
@@ -234,6 +234,36 @@ $$
 |$\hat{x} (s)$|未知|$\theta, \phi$|
 
 
+### 逆最適化の指標
+
+逆最適化問題(式(2.2))が解けたことを判定する指標，suboptimality損失関数を導入する．ReLU関数を$u \in \mathbb{R}$に対して$\mathrm{ReLU} (u) := \max (u , 0)$　とする．
+定数$\lambda \in \mathbb{R}_{\geq 0 }$とする．
+Suboptimality損失$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \widetilde{\Theta} \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $ ([[Ren et. al. 2025](ren2025inverse), [13](#K13)])を
+
+$$
+\begin{equation*}
+    \begin{split}
+        \ell^{\mathrm{sub}, \lambda} \left( x, \theta ,\phi ,s \right) 
+        & := 
+        \mathrm{ReLU} \left(
+                \max_{x^{\star} \in \mathcal{X} ( \phi , s )}
+                \theta^{\top} f (x^{\star},s) 
+            - \theta^{\top} f (x,s)
+        \right)
+        \\
+        & \quad \quad + \lambda \sum_{j=1}^J
+            \mathrm{ReLU} \left( 
+                h_j ( x , s) - \phi_j
+            \right)
+    \end{split}
+\end{equation*}
+$$
+
+で定義する．
+
+Suboptimality損失は以下の性質を持つ：
+> **命題**
+> 定数$\lambda > 0 $とする．$x \in \mathcal{X}$とする，このとき，$x \in \mathrm{FOP}( \theta , \phi , s)$であることと$\ell^{\mathrm{sub}, \lambda} ( x, \theta , \phi ,s ) = 0$は同値である．
 
 ### 提案手法
 
@@ -268,6 +298,7 @@ $$
 [<a id="K13">13</a>]  Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
 [[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
 
+[<a id="ren2025inverse">Ren et. al. 2025</a>] Ren, K., Esfahani, P. M., and Georghiou, A. (2025). Inverse optimization via learning feasible regions. In The 42nd International Conference on Machine Learning. to be appeared. [[arXiv:2505.15025](https://arxiv.org/abs/2505.15025)]
 
 [<a id="sakaue2025online">Sakaue et. al. 2025</a>] S Sakaue, T Tsuchiya, H Bao, T Oki, Online Inverse Linear Optimization: Improved Regret Bound, Robustness to Suboptimality, and Toward Tight Regret Analysis, NeurIPS 2025, to be appeared.
 [[arXiv:2501.14349](https://arxiv.org/abs/2501.14349)]
