@@ -1,6 +1,6 @@
 <a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
 
-更新日：2025年12月22日
+更新日：2025年12月25日
 
 # 混合整数計画問題の逆最適化問題
 
@@ -15,7 +15,7 @@
 さらに、逆強化学習 \citep{Ng2000-sf} やコントラスト学習 \citep{Shi2023-nd} をはじめとするさまざまな機械学習手法の基礎としても発展している。
 -->
 
-そこで，北岡がかかわった研究は以下である．
+そこで，北岡がかかわった研究は以下である．(独立に読めます．)
 - [1](#S1). 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと [[5](#K5), [8](#K8)]
 
 - [2](#S2). 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
@@ -148,19 +148,108 @@ $
 3. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
 4. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
 5. End For
-6. $$\phi^{\mathrm{best}}_K \in \arg\min_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
+6. $$\phi^{\mathrm{best}}_K \in \mathrm{argmin}_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
 
 ## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
 
-工事中
+### [[13](#K13)]の概要
 
-<details><summary>詳細</summary>
+||詳細|
+|---|---|
+|背景|混合整数線形計画において，観測データから目的関数や制約条件を学習するデータ駆動型逆最適化は，電力システムやスケジューリングなど様々な分野で適切な数理モデルを構築する上で，重要な役割を果たしている．|
+|課題|先行研究においてその両方を学習する方法は報告されていない．|
+|提案手法|目的関数が関数の線形和，制約条件が関数と閾値で表される問題のクラスに対して，まず制約条件を学習し，そして目的関数を学習する二段階アプローチを提案する．|4
+|理論結果1|理論面では，有限データにおいて提案手法によって逆最適化問題を解けることの理論保証|
+|理論結果2|擬距離空間と劣Gaussにおける統計的学習理論の展開|
+|理論結果3|逆最適化の統計的学習理論の構築を行う．| 
+|実験結果|実験面では，決定変数が$100$ 個の整数線形計画であるスケジューリングにおいてでも学習できることを実証する．|
 
-工事中
-</details>
+このうち，問題の定式化と，提案手法，理論結果1に関して解説する．
 
+### 問題設定
+順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画を含む，基本的かつ重要な問題を取り上げる．
 
-## 参考文献
+- **状態空間** $\mathcal{S}$: 空でない集合
+
+- **決定変数の集合** $\mathcal{X}$: 空でない $\mathbb{R}^{k}$ の部分集合
+
+- **確率単体** $\Delta^{d-1}$: 
+  $$\Delta^{d-1} := \left\{ \phi = (\phi_i)_i \in \mathbb{R}_{\geq 0}^d \,\middle|\, \sum_i \phi_i = 1 \right\}$$
+
+- **(特徴量)関数** $f_i \colon \mathcal{X} \times \mathcal{S} \to \mathbb{R}$ ($i = 1, \ldots, d$): 区分線形関数
+
+- **制約条件のラベルの数** $J$: 整数
+
+- **制約条件の閾値集合** $\Phi$: 空でない $\mathbb{R}^J$ の部分集合
+
+- **制約条件の関数** $h_j \colon \mathcal{X} \times \mathcal{S} \to \mathbb{R}$ ($j = 1, \ldots, J$)
+
+- **制約条件の写像** $h$: 
+  $$h := (h_1, \ldots, h_J)$$
+
+- **実行可能集合** $\mathcal{X}(\phi, s)$ (制約条件の閾値 $\phi \in \Phi$, 状態 $s \in \mathcal{S}$ に対して): 
+  $$\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$$
+
+$\theta \in \Delta^{d-1}$, $\phi \in \Phi$, $s \in \mathcal{S}$に対し，
+順問題を
+
+$$
+\begin{equation}
+    x^* (\theta, \phi, s)
+    \in
+    \mathbf{FOP} (\theta, \phi, s)
+    :=
+    \mathrm{arg max}_{x \in \mathcal{X} (\phi , s)} 
+        \theta^{\top} f (x,s)
+    \tag{2.1}
+%    \label{eq:FOP_linear}
+\end{equation}
+$$
+
+となる$x^*$を求めることである．最適解のデータ$\hat{x } \colon \mathcal{S} \to \mathcal{X}$が与えられたとき，データ駆動型逆最適化問題(data driven inverse optimization problem, DDIOP)を，以下を満たす$\theta \in \Delta^{d-1}$，$\phi \in \Phi$を求めることである：
+任意の状態$s \in \mathcal{S} $に対し，
+
+$$
+\begin{equation}
+    \hat{x} (s) \in \mathbf{FOP} (\theta, \phi , s)
+    .
+    \tag{2.2}
+%    \label{eq:IOP_linear}
+\end{equation}
+$$
+
+順問題と逆最適化問題の違いを以下の表でまとめる．
+|順問題(最適化)|逆問題(逆最適化問題)|
+|---|---|
+|$\textcolor{#E94709}{x^* (\theta, \phi, s)} \in \mathbf{FOP} (\theta, \phi, s)$|$\hat{x} (s) \in \mathbf{FOP} (\textcolor{#E94709}{\theta}, \textcolor{#E94709}{\phi} , s)$|
+
+- <span style="color: #E94709; ">朱色：未知</span>, 黒色：既知
+- $\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$
+- $\mathbf{FOP} (\theta, \phi, s)
+    :=
+    \mathrm{arg max}_{x \in \mathcal{X} (\phi , s)} 
+        \theta^{\top} f (x,s)$
+
+### 提案手法
+
+逆最適化問題を解くアルゴリズムとして，以下を提案する．
+<a id="alg:2.1">アルゴリズム2.1</a>: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [13](#K13)]
+1. $\varepsilon \geq 0 $をとる．
+2. $\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi | h ( x^{*} (s) , s) \leq \phi \text{ for } s \in \mathcal{S}^\prime \} $
+5. 以下を満たす$\theta^{\sup}\in \Delta^{d-1}$を計算する： $$
+    \mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x}^{*} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$$
+6. $\theta^{\sup} \in \Delta^{d-1}, \phi^{\sup} \in \Phi$を出力
+
+**注釈 2.2**: [アルゴリズム 2.1](#alg:2.1)の3行目を実装する方法として，[[8](#K8),アルゴリズム 1]が挙げられる．
+
+### (理論結果1) 模倣性に関する理論
+
+[アルゴリズム 2.1](#alg:2.1)によって，逆最適化(式(2.2))が解ける，つまり，以下の定理が成り立つ．
+
+> 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Delta^{d-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
+> このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{d-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
+
+# 参考文献
 
 [<a id="K5">5</a>] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
 [[arXiv:2305.06137](https://arxiv.org/abs/2305.06137)]
@@ -173,7 +262,7 @@ $
 [[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
 
 
-[<a id="sakaue2025online">Sakaue et. al. 2025</a>] S Sakaue, T Tsuchiya, H Bao, T Oki, Online Inverse Linear Optimization: Improved Regret Bound, Robustness to Suboptimality, and Toward Tight Regret Analysis, preprint.
+[<a id="sakaue2025online">Sakaue et. al. 2025</a>] S Sakaue, T Tsuchiya, H Bao, T Oki, Online Inverse Linear Optimization: Improved Regret Bound, Robustness to Suboptimality, and Toward Tight Regret Analysis, NeurIPS 2025, to be appeared.
 [[arXiv:2501.14349](https://arxiv.org/abs/2501.14349)]
 
 
