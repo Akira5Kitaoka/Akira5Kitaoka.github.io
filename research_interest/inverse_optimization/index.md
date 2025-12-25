@@ -218,13 +218,15 @@ $$
 \end{equation}
 $$
 
-順問題と逆最適化問題の違いを以下の表でまとめる．
+順問題と逆最適化問題の違い,
 - $$\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$$
 - $\mathbf{FOP} (\theta, \phi, s)
     :=
     \mathrm{arg max}_{x \in \mathcal{X} (\phi , s)} 
         \theta^{\top} f (x,s)$
-- $$\hat{x} (s) \in \mathbf{FOP} (\theta, \phi , s)$$に関して，以下の表を得る．
+- $$\hat{x} (s) \in \mathbf{FOP} (\theta, \phi , s)$$
+
+に関して，以下の表を得る．
 
 |順問題(最適化)||逆問題(逆最適化問題)|
 |---|---|---|
