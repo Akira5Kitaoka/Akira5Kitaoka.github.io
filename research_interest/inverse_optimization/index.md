@@ -192,7 +192,7 @@ $
 - **実行可能集合** $\mathcal{X}(\phi, s)$ (制約条件の閾値 $\phi \in \Phi$, 状態 $s \in \mathcal{S}$ に対して): 
   $$\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$$
 
-$\theta \in \Theta = \Delta^{d-1}$, $\phi \in \Phi$, $s \in \mathcal{S}$に対し，
+$\theta \in \Theta $, $\phi \in \Phi$, $s \in \mathcal{S}$に対し，
 順問題を
 
 $$
@@ -208,7 +208,7 @@ $$
 \end{equation}
 $$
 
-となる$x^*$を求めることである．最適解のデータ$\hat{x } \colon \mathcal{S} \to \mathcal{X}$が与えられたとき，データ駆動型逆最適化問題(data driven inverse optimization problem, DDIOP)を，以下を満たす$\theta \in \Delta^{d-1}$，$\phi \in \Phi$を求めることである：
+となる$x^*$を求めることである．最適解のデータ$\hat{x } \colon \mathcal{S} \to \mathcal{X}$が与えられたとき，データ駆動型逆最適化問題(data driven inverse optimization problem, DDIOP)を，以下を満たす$\theta \in \Theta$，$\phi \in \Phi$を求めることである：
 任意の状態$s \in \mathcal{S} $に対し，
 
 $$
@@ -240,7 +240,7 @@ $$
 
 逆最適化問題(式(2.2))が解けたことを判定する指標，suboptimality損失関数を導入する．ReLU関数を$u \in \mathbb{R}$に対して$$\mathrm{ReLU} (u) := \max (u , 0)$$とする．
 定数$\lambda \in \mathbb{R}_{\geq 0 }$とする．
-Suboptimality損失$$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \Delta^{d-1} \times \Phi \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $$ ([[Ren et. al. 2025](ren2025inverse), [13](#K13)])を
+Suboptimality損失$$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \Theta \times \Phi \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $$ ([[Ren et. al. 2025](ren2025inverse), [13](#K13)])を
 
 $$
 \begin{equation*}
@@ -269,6 +269,7 @@ Suboptimality損失は以下の性質を持つ：
 
 ### 提案手法
 
+$\Theta = \Delta^{d-1}$とする．
 逆最適化問題を解くアルゴリズムとして，以下を提案する．
 
 > **<a id="alg:2.1">アルゴリズム2.1</a>**: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [13](#K13)]
@@ -285,7 +286,7 @@ Suboptimality損失は以下の性質を持つ：
 [アルゴリズム 2.1](#alg:2.1)によって，逆最適化(式(2.2))が解ける，つまり，以下の定理が成り立つ．
 
 > **定理**
-> 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Delta^{d-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
+> 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Theta = \Delta^{d-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
 > このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{d-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
 
 # 参考文献
