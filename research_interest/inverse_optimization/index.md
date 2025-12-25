@@ -236,9 +236,9 @@ $$
 
 ### (準備) 逆最適化の指標
 
-逆最適化問題(式(2.2))が解けたことを判定する指標，suboptimality損失関数を導入する．ReLU関数を$u \in \mathbb{R}$に対して$\mathrm{ReLU} (u) := \max (u , 0)$　とする．
+逆最適化問題(式(2.2))が解けたことを判定する指標，suboptimality損失関数を導入する．ReLU関数を$u \in \mathbb{R}$に対して$$\mathrm{ReLU} (u) := \max (u , 0)$$とする．
 定数$\lambda \in \mathbb{R}_{\geq 0 }$とする．
-Suboptimality損失$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \widetilde{\Theta} \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $ ([[Ren et. al. 2025](ren2025inverse), [13](#K13)])を
+Suboptimality損失$$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \widetilde{\Theta} \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $$ ([[Ren et. al. 2025](ren2025inverse), [13](#K13)])を
 
 $$
 \begin{equation*}
