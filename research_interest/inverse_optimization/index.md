@@ -219,23 +219,26 @@ $$
 $$
 
 順問題と逆最適化問題の違いを以下の表でまとめる．
-|順問題(最適化)|逆問題(逆最適化問題)|
-|---|---|
-|$$\textcolor[HTML]{E94709}{x^* (\theta, \phi, s)} \in \mathbf{FOP} (\theta, \phi, s)$$|$$\hat{x} (s) \in \mathbf{FOP} (\textcolor[HTML]{E94709}{\theta}, \textcolor[HTML]{E94709}{\phi} , s)$$|
-
-- <span style="color: #E94709; ">朱色：未知</span>, 黒色：既知
 - $$\mathcal{X}(\phi, s) := \left\{ x \in \mathcal{X} \,\middle|\, h(x, s) \leq \phi \right\}$$
 - $\mathbf{FOP} (\theta, \phi, s)
     :=
     \mathrm{arg max}_{x \in \mathcal{X} (\phi , s)} 
         \theta^{\top} f (x,s)$
+- $$\hat{x} (s) \in \mathbf{FOP} (\theta, \phi , s)$$に関して，以下の表を得る．
+
+|順問題(最適化)||逆問題(逆最適化問題)|
+|---|---|---|
+|$\theta, \phi,s,f,h$|既知|$\hat{x} (s),s,f,h$|
+|$\hat{x} (s)$|未知|$\theta, \phi$|
+
+
 
 ### 提案手法
 
 逆最適化問題を解くアルゴリズムとして，以下を提案する．
 <a id="alg:2.1">アルゴリズム2.1</a>: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [13](#K13)]
 1. $\varepsilon \geq 0 $をとる．
-2. $\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi | h ( x^{*} (s) , s) \leq \phi \text{ for } s \in \mathcal{S}^\prime \} $
+2. $$\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi | h ( x^{*} (s) , s) \leq \phi \text{ for } s \in \mathcal{S}^\prime \} $$
 5. 以下を満たす$\theta^{\sup}\in \Delta^{d-1}$を計算する： $$
     \mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x}^{*} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$$
 6. $\theta^{\sup} \in \Delta^{d-1}, \phi^{\sup} \in \Phi$を出力
@@ -246,6 +249,7 @@ $$
 
 [アルゴリズム 2.1](#alg:2.1)によって，逆最適化(式(2.2))が解ける，つまり，以下の定理が成り立つ．
 
+> 定理
 > 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Delta^{d-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
 > このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{d-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
 
