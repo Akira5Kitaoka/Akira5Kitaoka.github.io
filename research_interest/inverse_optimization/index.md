@@ -371,7 +371,6 @@ $\Theta = \Delta^{d-1}$とする．
 [<a id="sakaue2025online">Sakaue et. al. 2025</a>] S Sakaue, T Tsuchiya, H Bao, T Oki, Online Inverse Linear Optimization: Improved Regret Bound, Robustness to Suboptimality, and Toward Tight Regret Analysis, NeurIPS 2025, to be appeared.
 [[arXiv:2501.14349](https://arxiv.org/abs/2501.14349)]
 
-[<a id="suenaga2024kaigoshi">Suenaga et. al. 2024</a>]末永 康貴, 永井 裕也, 柏木 一杜, 小野 智司, 介護士スケジューリングにおける制約条件の自動抽出の試み, 人工知能学会全国大会論文集, 2024, JSAI2024 巻, 第38回 (2024), セッションID 2M1-OS-11a-04, p. 2M1OS11a04, 
-
+[<a id="suenaga2024kaigoshi">Suenaga et. al. 2024</a>]末永 康貴, 永井 裕也, 柏木 一杜, 小野 智司, 介護士スケジューリングにおける制約条件の自動抽出の試み, 人工知能学会全国大会論文集, 2024, JSAI2024 巻, 第38回 (2024), セッションID 2M1-OS-11a-04, p. 2M1OS11a04.
 
 <a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
