@@ -27,6 +27,7 @@
 - De Rham複体で定義される不変量や概念などを，接触幾何や放物型幾何で見られるBernstein-Gelfand-Gelfand複体(BGG複体)でも同様に定義し，この二つの関係を明らかにすることで，幾何学的な制約条件を見つける研究をしていました．
 - <a href="{{ '/research_interest/bgg_complex' | relative_url }}">詳細>></a>
 
+
 ## 研究の小ネタ集
 自分の研究で小ネタになりそうな話，
 
