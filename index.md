@@ -37,9 +37,9 @@ Akira KITAOKA<br>
 
 # ニュース
 
-- (**2025年11月13-16日**) [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html)にて，以下の松野竜太さんとの共著論文を，松野竜太さんが講演されました．
+- (**2025年11月12日**) [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html)にて，以下の松野竜太さんとの共著論文を，松野竜太さんが講演されました．
 
-[19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月13-16日. [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
+[19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月12日. [[論文](https://ieeexplore.ieee.org/document/11391798)] [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
 
 - (**2025年11月12日**) [IBIS 2025](https://ibisml.org/ibis2025/posters/)に参加し，発表しました．
 
