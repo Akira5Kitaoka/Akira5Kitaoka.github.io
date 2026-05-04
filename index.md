@@ -37,33 +37,33 @@ Akira KITAOKA<br>
 
 # ニュース
 
-- (**2026年5月4日**) [JSAI2025](https://www.ai-gakkai.or.jp/jsai2026/)に参加と，以下を発表する予定です．
+- (**2026年5月4日**) [JSAI2026](https://www.ai-gakkai.or.jp/jsai2026/)に参加し，以下を発表する予定です．
 
-[19] 北岡旦, 逆混合整数計画法: 制約条件学習からの目的関数学習（Japanese）, [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. 
+[P20] 北岡旦, 逆混合整数計画法: 制約条件学習からの目的関数学習（Japanese）, [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. 
 
 - (**2025年11月12日**) [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html)にて，以下の松野竜太さんとの共著論文を，松野竜太さんが講演されました．
 
-[19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月12日. [[論文](https://ieeexplore.ieee.org/document/11391798)] [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
+[P19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月12日. [[論文](https://ieeexplore.ieee.org/document/11391798)] [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
 
 - (**2025年11月12日**) [IBIS 2025](https://ibisml.org/ibis2025/posters/)に参加し，発表しました．
 
-[18] 北岡 旦, Inverse Mixed-Integer Programming: Learning of Constraints then Objective Functions (Japanese), [IBIS 2025](https://ibisml.org/ibis2025/posters/), 2025年11月12日.
+[T18] 北岡 旦, Inverse Mixed-Integer Programming: Learning of Constraints then Objective Functions (Japanese), [IBIS 2025](https://ibisml.org/ibis2025/posters/), 2025年11月12日.
 
 
 - (**2025年10月6日**) 以下の論文をarXivに投稿しました．
 
-[13] Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
+[P13] Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
 [[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
 
 - (**2025年7月1日**) [JSAI2025](https://www.ai-gakkai.or.jp/jsai2025/)に参加し，以下を発表しました．論文が公開されました．
 
-[11] 北岡 旦, 岡嶋 穣，佐々木 耀一，高野 凜，曲線のエネルギー最小化による経路に基づく反実仮想説明 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced), 1Win4-97, 2025年5月27日. \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1Win497/_article/-char/ja/)\] \[[正誤表](./papers/JSAI2025_energy_minimization_CE/JSAI_energy_minimization_CE_errata.pdf)\]
+[P11] 北岡 旦, 岡嶋 穣，佐々木 耀一，高野 凜，曲線のエネルギー最小化による経路に基づく反実仮想説明 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/1Win4-97/advanced), 1Win4-97, 2025年5月27日. \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1Win497/_article/-char/ja/)\] \[[正誤表](./papers/JSAI2025_energy_minimization_CE/JSAI_energy_minimization_CE_errata.pdf)\]
 
-[12] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), 2L4-GS-1-05, 2025年5月28日.  \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2L4GS105/_article/-char/ja/)\]
+[P12] 松野 竜太，北岡 旦，佐久間 啓太，廣川 暢一，2サンプル平均化データに基づく非線形回帰モデルの学習 (Japanese), [JSAI2025](https://confit.atlas.jp/guide/event/jsai2025/subject/2L4-GS-1-05/advanced), 2L4-GS-1-05, 2025年5月28日.  \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2L4GS105/_article/-char/ja/)\]
 
 - (**2025年5月1日**) 以下の論文が受理されました．
 
-[4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, [Osaka Journal of Mathematics](http://www.math.sci.osaka-u.ac.jp/ojm/), to appear.
+[P4] Akira Kitaoka, Harmonic forms and the Rumin complex on Sasakian manifolds, [Osaka Journal of Mathematics](http://www.math.sci.osaka-u.ac.jp/ojm/), to appear.
 [[arXiv:2204.03446](https://arxiv.org/abs/2204.03446)]
 
 

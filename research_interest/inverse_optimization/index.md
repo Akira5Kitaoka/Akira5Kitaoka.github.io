@@ -8,7 +8,7 @@
 
 **研究内容**：与えられたデータが最適解になるような，(混合整数)線形計画法の目的関数の重みと制約条件の閾値を推定する高速なアルゴリズムを開発した．
 
-**背景**:　最適化問題は，人間の意思決定から自然現象に至るまで，さまざまなプロセスやシステムの順方向モデルとして定義することが多い．しかし，そのようなモデルにおける真の目的関数や制約条件が，事前にはほとんど分かっていないのが実情である．したがって，観測された最適解から目的関数や制約条件を推定する，すなわち**逆最適化**の問題は，実践的に非常に重要である．逆最適化は，地球物理学，交通，電力システム，スケジューリング，医療への応用があり，また，逆強化学習，コントラスト学習などをはじめとするさまざまな機械学習の基礎としても発展している．(cf. [[Sakaue et. al. 2025](#sakaue2025online), [13](#K13)])
+**背景**:　最適化問題は，人間の意思決定から自然現象に至るまで，さまざまなプロセスやシステムの順方向モデルとして定義することが多い．しかし，そのようなモデルにおける真の目的関数や制約条件が，事前にはほとんど分かっていないのが実情である．したがって，観測された最適解から目的関数や制約条件を推定する，すなわち**逆最適化**の問題は，実践的に非常に重要である．逆最適化は，地球物理学，交通，電力システム，スケジューリング，医療への応用があり，また，逆強化学習，コントラスト学習などをはじめとするさまざまな機械学習の基礎としても発展している．(cf. [[Sakaue et. al. 2025](#sakaue2025online), [P13](#K13)])
 <!-- 
 この分野における初期の研究は地球物理学から登場し、地震波データから地下構造を推定することを目的としていた \citep{Tarantola1988-tq,Burton1992-dc}。  
 その後、逆最適化は広く研究されるようになり \citep{Ahuja2001-cv,Heuberger2004-zv,Chan2019-zg,Chan2023-qk}、交通 \citep{Bertsimas2015-kw}、電力システム \citep{Birge2017-il}、医療 \citep{Chan2022-uq} などのさまざまな分野に応用されてきた。  
@@ -16,13 +16,13 @@
 -->
 
 そこで，北岡がかかわった研究は以下である．(独立に読めます．)
-- [1](#S1). 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと [[5](#K5), [8](#K8)]
+- [1](#S1). 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと [[P5](#K5), [P8](#K8)]
 
-- [2](#S2). 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
+- [2](#S2). 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[P13](#K13)]
 
-## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと[[5](#K5), [8](#K8)]
+## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと[[P5](#K5), [P8](#K8)]
 
-### [[8](#K8)]の概要
+### [[P8](#K8)]の概要
 
 ||詳細|
 |---|---|
@@ -101,7 +101,7 @@ $$
 - 業務負荷の平準化度，
 - 人件費
 
-などが挙げられる[[5](#K5)]．そこで，目的関数を決定する方法として，複数の目的関数の候補を割合$\theta \in \Theta$を決めて足し合わせることが考えられる．
+などが挙げられる[[P5](#K5)]．そこで，目的関数を決定する方法として，複数の目的関数の候補を割合$\theta \in \Theta$を決めて足し合わせることが考えられる．
 
 さて，逆最適化によって，目的関数の設計に役立つことをスケジューリングを通して解説する．スケジューリングのデータ$\{ (s^{(n)}, a^{(n)}) \}$を用いて，スケジューリングにおける逆最適化問題を解くとは，数理モデル$\mathrm{FOP}$があたえられたとき，データ$\{ (s^{(n)}, a^{(n)}) \}$を復元するような，目的関数の割合$\theta \in \Theta$を決定することを意味する．具体例を通して解説すると，逆最適化は，データ$\{ (s^{(n)}, a^{(n)}) \}$を再現するような，(1)で出た目的関数の候補の例に関して割合$\theta \in \Theta$を決定することである．
 
@@ -115,11 +115,11 @@ $$
 |------|-------------------------|
 | UPA | $O(k^{-1/(d-1)})$ |
 | RPA | $O_{\mathbb{P}}\left(\left( \frac{\log k}{k} \right)^{1/(d-1)}\right)$ |
-| PSGD2 (提案手法) [[8](#K8)] | $O\left(k^{1/(\gamma+1)} \exp\left(-\frac{\gamma}{\gamma+2}k^{1/2}\right)\right)$ |
+| PSGD2 (提案手法) [[P8](#K8)] | $O\left(k^{1/(\gamma+1)} \exp\left(-\frac{\gamma}{\gamma+2}k^{1/2}\right)\right)$ |
 
 ### 効果  
 
-提案手法[[5](#K5), [8](#K8)]であるPSGD2は，推定困難な正定数$\gamma$が存在するものの，既存手法RPA, UPAに比べて，解の予測誤差の最小値を高速に達成できる．
+提案手法[[P5](#K5), [P8](#K8)]であるPSGD2は，推定困難な正定数$\gamma$が存在するものの，既存手法RPA, UPAに比べて，解の予測誤差の最小値を高速に達成できる．
 
 また，PSGD2は，ほとんど至る真の重み$\phi^*$で，有限回の反復で，解の予測誤差を$0$にすることができる．
 
@@ -151,7 +151,7 @@ $$
 $$
 
 という性質を持つ．
-劣勾配$g$は解の予測誤差に現れるノルムの中身の平均を取ったものである．解の予測誤差が最小値である$0$になることと劣勾配$g$が$0$になることは同値である[補題 5.11, [8](#K8)]．
+劣勾配$g$は解の予測誤差に現れるノルムの中身の平均を取ったものである．解の予測誤差が最小値である$0$になることと劣勾配$g$が$0$になることは同値である[補題 5.11, [P8](#K8)]．
 劣勾配$g$が$0$を達成することと，suboptimality損失が最小値を達成することは同値だとする．
 このとき，解の予測誤差が最小値$0$を達成することと，suboptimality損失が最小値を達成することは同値だとしてよい．
 
@@ -174,7 +174,7 @@ $
 としたものをPSGD2とする．
 
 
-> **<a id="alg:1">アルゴリズム1</a>**: suboptimality損失最小化 [アルゴリズム1, [5](#K5)]
+> **<a id="alg:1">アルゴリズム1</a>**: suboptimality損失最小化 [アルゴリズム1, [P5](#K5)]
 > 1. $\phi_1 = \left(\frac{1}{d}, \ldots, \frac{1}{d}\right) \in \Delta^{d-1}$ で初期化
 > 2. For $k = 1, \ldots, K-1$:
 > 3. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
@@ -182,9 +182,9 @@ $
 > 5. End For
 > 6. $$\phi^{\mathrm{best}}_K \in \mathrm{argmin}_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
 
-## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[13](#K13)]
+## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[P13](#K13)]
 
-### [[13](#K13)]の概要
+### [[P13](#K13)]の概要
 
 ||詳細|
 |---|---|
@@ -279,7 +279,7 @@ $$
 - 業務負荷の平準化度，
 - 人件費
 
-などが挙げられる[[5](#K5)]．そこで，目的関数を決定する方法として，複数の目的関数の候補を割合$\theta \in \Theta$を決めて足し合わせることが考えられる．
+などが挙げられる[[P5](#K5)]．そこで，目的関数を決定する方法として，複数の目的関数の候補を割合$\theta \in \Theta$を決めて足し合わせることが考えられる．
 
 
 (2) 制約条件を決定する際に，制約条件の適切な閾値は何か，もしくは，真に必要な制約条件は何かを考える必要がある．これらの課題を解決する方法として，制約テンプレートを用いる方法がある[[Suenaga et. al. 2024](#suenaga2024kaigoshi)]．制約テンプレートの例として，
@@ -305,7 +305,7 @@ $$
 
 逆最適化問題(式(2.2))が解けたことを判定する指標，suboptimality損失関数を導入する．ReLU関数を$u \in \mathbb{R}$に対して$$\mathrm{ReLU} (u) := \max (u , 0)$$とする．
 定数$\lambda \in \mathbb{R}_{\geq 0 }$とする．
-Suboptimality損失$$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \Theta \times \Phi \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $$ ([[Ren et. al. 2025](ren2025inverse), [13](#K13)])を
+Suboptimality損失$$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \Theta \times \Phi \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $$ ([[Ren et. al. 2025](ren2025inverse), [P13](#K13)])を
 
 $$
 \begin{equation*}
@@ -337,14 +337,14 @@ Suboptimality損失は以下の性質を持つ：
 $\Theta = \Delta^{d-1}$とする．
 逆最適化問題を解くアルゴリズムとして，以下を提案する．
 
-> **<a id="alg:2.1">アルゴリズム2.1</a>**: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [13](#K13)]
+> **<a id="alg:2.1">アルゴリズム2.1</a>**: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [P13](#K13)]
 > 1. $\varepsilon \geq 0 $をとる．
 > 2. $$\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi | h ( x^{*} (s) , s) \leq \phi \text{ for } s \in \mathcal{S}^\prime \} $$
 > 3. 以下を満たす$\theta^{\sup}\in \Delta^{d-1}$を計算する： $$
     \mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x}^{*} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$$
 > 4. $\theta^{\sup} \in \Delta^{d-1}, \phi^{\sup} \in \Phi$を出力
 
-**注釈 2.2**: [アルゴリズム 2.1](#alg:2.1)の3行目を実装する方法として，[[8](#K8),アルゴリズム 1]が挙げられる．
+**注釈 2.2**: [アルゴリズム 2.1](#alg:2.1)の3行目を実装する方法として，[[P8](#K8),アルゴリズム 1]が挙げられる．
 
 ### (理論結果1) 模倣性に関する理論
 
@@ -352,18 +352,18 @@ $\Theta = \Delta^{d-1}$とする．
 
 > **定理 2.3**
 > 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Theta = \Delta^{d-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
-> このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{d-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
+> このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{d-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[P8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
 
 # 参考文献
 
-[<a id="K5">5</a>] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
+[<a id="K5">P5</a>] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
 [[arXiv:2305.06137](https://arxiv.org/abs/2305.06137)]
 
-[<a id="K8">8</a>] Akira Kitaoka, A fast algorithm to minimize prediction loss of the optimal solution in inverse optimization problem of MILP, preprint.
+[<a id="K8">P8</a>] Akira Kitaoka, A fast algorithm to minimize prediction loss of the optimal solution in inverse optimization problem of MILP, preprint.
 [[arXiv:2405.14273](https://arxiv.org/abs/2405.14273)]
 
 
-[<a id="K13">13</a>]  Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
+[<a id="K13">P13</a>]  Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
 [[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
 
 [<a id="ren2025inverse">Ren et. al. 2025</a>] Ren, K., Esfahani, P. M., and Georghiou, A. (2025). Inverse optimization via learning feasible regions. In The 42nd International Conference on Machine Learning. to be appeared. [[arXiv:2505.15025](https://arxiv.org/abs/2505.15025)]

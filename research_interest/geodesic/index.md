@@ -4,14 +4,14 @@
 
 **キーワード**: 数値解析，測地線，数理最適化，最適制御
 
-**背景**: 最短の長さを実現する最短測地線を決定する問題は，コンピュータビジョン，ロボティクス，機械学習など，様々な分野で注目を集めている．(cf. [[10](#K10)])
+**背景**: 最短の長さを実現する最短測地線を決定する問題は，コンピュータビジョン，ロボティクス，機械学習など，様々な分野で注目を集めている．(cf. [[P10](#K10)])
 
 
-## 有限差分法と数値積分を用いて長さ最小化を近似して解いたものが真の長さ最小化に漸近しない例[[10](#K10), $\S 5$]
+## 有限差分法と数値積分を用いて長さ最小化を近似して解いたものが真の長さ最小化に漸近しない例[[P10](#K10), $\S 5$]
 
 **効果**: これは，汎関数最小化を実装するために．有限差分法と数値積分を用いて近似して解いても，真の汎関数最小化を実現できないことを意味する．
 
-##  有限差分法と数値積分を用いた実座標空間上の曲線のエネルギー最小化による長さ最小化の誤差評価[[10](#K10)]
+##  有限差分法と数値積分を用いた実座標空間上の曲線のエネルギー最小化による長さ最小化の誤差評価[[P10](#K10)]
 
 **背景**: 最短測地線を実装する方法として，曲線のエネルギー最小化問題を，有限差分と数値積分で近似した非線形最適化問題の解を線形補完する方法が挙げられる．この方法は，他の方法に比べて，実装が容易な傾向にある．
 
@@ -24,11 +24,11 @@
 
 ## 参考文献
 
-[<a id="K10">10</a>] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
+[<a id="K10">P10</a>] Akira Kitaoka, Minimization of curve length through energy minimization using finite difference and numerical integration in real coordinate space, preprint.
 [[arXiv:2504.15566](https://arxiv.org/abs/2504.15566)]
 
 <!--
-<details><summary>裏話([10]の論文ができるまで)</summary>
+<details><summary>裏話([P10]の論文ができるまで)</summary>
 
 秘密
 </details>
