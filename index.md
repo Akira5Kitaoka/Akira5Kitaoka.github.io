@@ -41,6 +41,10 @@ Akira KITAOKA<br>
 
 [P20] 北岡旦, 逆混合整数計画法: 制約条件学習からの目的関数学習（Japanese）, [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. 
 
+- (**2026年5月3日**) 以下のツールをGitHubに公開しました．
+
+[T1] TeXからMarkdownに変換するツール（Japanese）[[GitHub](https://github.com/Akira5Kitaoka/TeX_to_markdown_with_shell_JP)] 
+
 - (**2025年11月12日**) [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html)にて，以下の松野竜太さんとの共著論文を，松野竜太さんが講演されました．
 
 [P19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月12日. [[論文](https://ieeexplore.ieee.org/document/11391798)] [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
