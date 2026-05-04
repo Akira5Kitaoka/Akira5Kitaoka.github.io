@@ -37,6 +37,10 @@ Akira KITAOKA<br>
 
 # ニュース
 
+- (**2026年5月4日**) [JSAI2025](https://www.ai-gakkai.or.jp/jsai2026/)に参加と，以下を発表する予定です．
+
+[19] 北岡旦, 逆混合整数計画法: 制約条件学習からの目的関数学習（Japanese）, [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. 
+
 - (**2025年11月12日**) [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html)にて，以下の松野竜太さんとの共著論文を，松野竜太さんが講演されました．
 
 [19] Ryuta Matsuno, Akira Kitaoka, Learning from Two-Sample Averaged Data, [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/index.html), 2025年11月12日. [[論文](https://ieeexplore.ieee.org/document/11391798)] [[講演動画](https://video.computer.org/ICDM25/10ME7GxDtJrOktMO8JeVyl-DM531-Matsuno.mp4.html)]
