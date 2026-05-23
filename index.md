@@ -24,13 +24,17 @@ Akira KITAOKA<br>
 
 # リンク
 
-<a href='https://orcid.org/0000-0002-3867-759X' target='_blank'><img src="images/ORCID-iD_icon_32x32.png" height="20pt" alt="ORCiD"></a>
+- 論文や業績: <a href='https://orcid.org/0000-0002-3867-759X' target='_blank'><img src="images/ORCID-iD_icon_32x32.png" height="20pt" alt="ORCiD"></a>
 <a href='https://scholar.google.com/citations?hl=ja&user=Cho6jckAAAAJ' target='_blank'><img src="images/Google_Scholar_logo.svg" height="20pt" alt="SEMANTIC SCHOLAR"></a>
 <a href='https://www.semanticscholar.org/author/Akira-Kitaoka/2078930525' target='_blank'><img src="images/Semantic_scholar_logo.png" height="20pt" alt="SEMANTIC SCHOLAR"></a>
-<a href='https://twitter.com/akitaoka_en' target='_blank'><img src="images/logo-black.png" height="20pt" alt="X"></a>
-<a href='https://zenn.dev/akira5kitaoka' target='_blank'><img src="images/zenn-logo-only.svg" height="20pt" alt="Zenn"></a>
-<a href='https://www.linkedin.com/in/akira-kitaoka-42a84425b/' target='_blank'><img src="images/LI-In-Bug.png" height="20pt" alt="LinkedIn"></a>
 <a href='https://researchmap.jp/akira5kitaoka' target='_blank'><img title='researchmap' height=20pt alt='researchmap' src='https://researchmap.jp/outline/img/researchmap130.gif' /></a>
+
+- 記事: <a href='https://qiita.com/akira5kitaoka' target='_blank'><img src="images/qiita-icon.png" height="20pt" alt="Qiita"></a>
+<a href='https://zenn.dev/akira5kitaoka' target='_blank'><img src="images/zenn-logo-only.svg" height="20pt" alt="Zenn"></a>
+
+- SNS: <a href='https://twitter.com/akitaoka_en' target='_blank'><img src="images/logo-black.png" height="20pt" alt="X"></a>
+<a href='https://www.linkedin.com/in/akira-kitaoka-42a84425b/' target='_blank'><img src="images/LI-In-Bug.png" height="20pt" alt="LinkedIn"></a>
+
 
 
 
