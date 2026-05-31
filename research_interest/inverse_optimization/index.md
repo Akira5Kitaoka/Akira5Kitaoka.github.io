@@ -134,7 +134,7 @@ $$\mathrm{update}_t = \mathrm{Proj}_{\Theta} \left( \theta^t - \alpha_t g(\theta
 > 1. $\theta^1 \in \Theta$ で初期化
 > 2. For $t = 1, \ldots, T-1$:
 > 3. &nbsp;&nbsp;&nbsp;&nbsp; 各$n$に対し $x^*(\theta^t, s^{(n)})$ を解く
-> 4. &nbsp;&nbsp;&nbsp;&nbsp; $\theta^{t+1} \leftarrow \mathrm{update}_t \left( \{ \theta^{t^\prime} \}_{t^\prime=1}^t \mid \ell_{\mathrm{sub}}, g \right)$
+> 4. &nbsp;&nbsp;&nbsp;&nbsp; $$\theta^{t+1} \leftarrow \mathrm{update}_t \left( \{ \theta^{t^\prime} \}_{t^\prime=1}^t \mid \ell_{\mathrm{sub}}, g \right)$$
 > 5. End For
 > 6. $$\theta^{\mathrm{best}}_T \in \mathrm{argmin}_{\theta \in \left\{\theta^t \right\}^T_{t=1}} \ell_{\mathrm{sub}}(\theta)$$ を出力
 
