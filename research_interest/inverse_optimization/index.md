@@ -1,6 +1,6 @@
 <a href="{{ '/research_interest' | relative_url }}">研究紹介に戻る>></a>
 
-更新日：2025年12月26日
+更新日：2026年05月31日
 
 # 混合整数計画の逆最適化問題
 
@@ -26,69 +26,55 @@
 
 ||詳細|
 |---|---|
-|背景|混合整数線形計画において，観測データから目的関数を学習するデータ駆動型逆最適化は，電力システムやスケジューリングなど様々な分野で適切な数理モデルを構築する上で，重要な役割を果たしている．|
-|課題|既存手法だと，計算効率が悪い．特に次元が大きくなるにつれて，計算効率が大幅に悪くなる．$k$を学習回数としたとき，効率が良いとされている既存手法でも，重みに関する誤差が$O(k^{-1/(d-1)})$．|
-|提案手法|Suboptimality損失に関する，ステップ幅$k^{-1/2}$の劣射影勾配法を提案|
-|理論結果1|効率的に学習できる．特に，ある$\gamma >0$が存在し，真の重みとの誤差が，$O\left(k^{1/(\gamma+1)} \exp\left(-\frac{\gamma}{\gamma+2}k^{1/2}\right)\right)$で抑えられることを示す．|
-|理論結果2|有限回の反復で，観測データを復元できることを示す．|
-|実験結果|実験面では，提案手法が既知手法の$1/7$未満のMILP呼び出し回数でMILPの逆最適化問題を解き，有限回の反復で収束することが実証する．|
+|背景|混合整数線形計画(MILP)において，観測された最適解データと整合する目的関数(重み)を推定するデータ駆動型逆最適化問題(DDIOP)は，電力システムやスケジューリングなど様々な分野で適切な数理モデルを構築する上で，重要な役割を果たしている．|
+|課題|評価指標である特徴量の予測誤差(PLF)は重みに関して不連続であり，勾配ベース最適化を適用できない．代替指標であるsuboptimality損失はLipschitz連続かつ凸であるが，既存研究の多くは反復回数$T\to\infty$での漸近的な収束保証にとどまり，有限回の反復で厳密に($\ell_{\mathrm{sub}}=0$)解けるかは整理されていなかった．素朴な点群探索(UPA/RPA)は次元$d$の影響を強く受ける．|
+|提案手法|suboptimality損失に対し，射影劣勾配法(PSGD)を含む広いクラスの勾配ベース最適化手法を適用する．|
+|理論結果1 (有限回での厳密可解性)|(A)過去の反復点列と劣勾配のみで更新され，(B)Lipschitz凸関数に対して標準的な収束保証をもつ勾配ベース最適化手法は，有限回の反復で$\ell_{\mathrm{sub}}=0$に到達し，MILPに関するDDIOPを厳密に解けることを示す．|
+|理論結果2 (反復回数の具体化)|PSGDの代表的なステップサイズ則に対し，定数$\gamma(\ell_{\mathrm{sub}})$を介して有限回到達までに要する反復回数の上界を与える．|
+|理論結果3 (派生結果)|PSGDが有限回の反復でPLFの最小値$0$に到達することを示す．|
+|実験結果|人工データ(LP)とスケジューリング問題において，既存手法の$1/7$(LP)・$1/10$(スケジューリング)未満の反復回数でPLFを最小化し，$100\%$の確率でPLF$=0$を達成することを実証する．|
 
 ### (準備) 問題設定
-順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画を含む，基本的かつ重要な問題を取り上げる．
-$i = 1 , \ldots ,d $に対し，
-$h_i \colon \mathbb{R}^{\bullet} \to \mathbb{R}$は区分線形であるとする．
-集合$\mathcal{S}$を
+順問題の目的関数が区分線形関数の線形和で書けている，混合整数線形計画(MILP)を含む，基本的かつ重要な問題を取り上げる．
+決定変数の集合$\mathcal{X} \subset \mathbb{R}^{d_{\mathcal{X}}}$，状態の集合$\mathcal{S}$とする．各状態$s \in \mathcal{S}$に対し，実行可能領域$X(s) \subset \mathcal{X}$を有界閉凸多面体の有限合併集合とする．
+各$i = 1 , \ldots ,d $に対し，$f_i \colon \mathcal{X} \to \mathbb{R}$は区分線形であるとし，$f = (f_1 , \ldots , f_d )$とする．
+重みの空間$\Theta \subset \mathbb{R}^d$を有界閉凸集合とし，特に確率単体
+$$\Delta^{d-1} := \{ \theta \in \mathbb{R}_{\geq 0 }^d \mid \sum_i \theta_i =1 \} $$
+を考える．
+順問題(forward optimization problem, FOP)とその最適解の特徴量を以下で定義する．
 
 $$
-    \mathcal{S} = \{ s = (A,b) \in  \mathbb{R}^{\bullet \times \bullet} \times \mathbb{R}^{\bullet} \}
-$$
-
-とし，$s \in \mathcal{S}$に対して集合
-
-$$
-    X(s) := \{ x \in \mathbb{R}^{\bullet} \times \mathbb{Z}^{\bullet} | Ax \leq b\} 
-$$
-
-とする．
-確率単体$$\Delta^{d-1} := \{ \phi \in \mathbb{R}_{\geq 0 }^d | \sum_i \phi_i =1 \} $$
-とする．
-順問題を以下で定義する．
-
-$$
-\begin{equation*}
-    \begin{split}
-        x^* (\phi , s ) & \in \mathrm{argmax}_{x \in X (s)} \phi^{\intercal} h ( x ) \left( 
-        =
-        \sum_{i=1}^d \phi_i h_i (x)
-        \right)
+    x^* (\theta , s ) \in \mathrm{argmax}_{x \in X (s)} \theta^{\top} f ( x ) \left( 
+        = \sum_{i=1}^d \theta_i f_i (x) \right)
         , 
-        \\
-        \quad a(\phi , s ) & := h (x^*(\phi , s ))
+    \quad a^* (\theta , s ) := f (x^*(\theta , s ))
         .
-    \end{split}
-    %\label{eq:forward_optimization_problem}
-\end{equation*}
 $$
 
 順問題の逆最適化問題を定義する．
-データ$\mathcal{D} = \\{ (s^{(n)} , a^{(n)} ) \\}_{n=1}^N$は未知の真の重み$\phi^* $が存在し，
+データ$\mathcal{D} = \\{ (s^{(n)} , x^{(n)} ) \\}_{n=1}^N$には未知の真の重み$\theta^* \in \Theta$が存在し，
 
 $$
    s^{(n)} \in \mathcal{S} , 
-   \quad a^{(n)} = a ( \phi^* , s^{(n)} )
+   \quad x^{(n)} = x^* ( \theta^* , s^{(n)} )
    %\label{assu:data-follows-solver}  
 $$
 
-を満たすとする．
-この未知の重み$\phi^* $をデータ$\mathcal{D}$から推定する問題，つまり，解の予測誤差
+を満たすとする．$a^{(n)} := f (x^{(n)})$とおく．
+このデータ駆動型逆最適化問題(DDIOP)とは，観測された最適解と整合する重み$\theta \in \Theta$，すなわち任意の$n = 1 , \ldots , N$に対して
 
 $$
-\begin{equation*}%\label{eq:def_minimization_PLS} 
-    \ell_{\mathrm{pres}} (\phi) := \frac{1}{N}\sum_{n=1}^N \| a(\phi , s^{(n)} ) - a^{(n)} \|_2^2.
-\end{equation*}
+    x^{(n)} \in \mathrm{argmax}_{x \in X (s^{(n)})} \theta^{\top} f ( x )
 $$
 
-を最小化する問題を考える．
+を満たす$\theta$を求める問題である．
+DDIOPが解けたかを測る指標として，特徴量の予測誤差(prediction loss of features, PLF)
+
+$$
+    \ell_{\mathrm{plf}} (\theta) := \frac{1}{N}\sum_{n=1}^N \| a^* (\theta , s^{(n)} ) - a^{(n)} \|_2^2
+$$
+
+がある．$\ell_{\mathrm{plf}} (\theta) = 0$ならばDDIOPが解けたことを意味する．
 
 ### (準備) スケジューリング問題から見る順問題と逆問題
 
@@ -106,81 +92,65 @@ $$
 さて，逆最適化によって，目的関数の設計に役立つことをスケジューリングを通して解説する．スケジューリングのデータ$\{ (s^{(n)}, a^{(n)}) \}$を用いて，スケジューリングにおける逆最適化問題を解くとは，数理モデル$\mathrm{FOP}$があたえられたとき，データ$\{ (s^{(n)}, a^{(n)}) \}$を復元するような，目的関数の割合$\theta \in \Theta$を決定することを意味する．具体例を通して解説すると，逆最適化は，データ$\{ (s^{(n)}, a^{(n)}) \}$を再現するような，(1)で出た目的関数の候補の例に関して割合$\theta \in \Theta$を決定することである．
 
 ### 課題
-既存の手法では解の予測誤差を最小化するのに効率が悪く，特に高次元の場合次元の影響を受ける．素朴な方法として，
-確率単体$\Delta^{d-1}$
-から均一に点を取る方法(UPA)やランダムに点を取る方法(RPA)が挙げられる．UPAとRPAは次元$d$の影響を大きく受ける．
+PLFは重み$\theta$に関して不連続であるため，勾配ベース最適化手法を直接適用できない．DDIOPを解く素朴な方法として，確率単体$\Delta^{d-1}$から均一に点群を取る方法(UPA)やランダムに点群を取る方法(RPA)が挙げられる．しかし真の重み$\theta^*$と点群との距離は，点群数を$T$とすると，それぞれ$O(T^{-1/(d-1)})$，$O\left(\left( \frac{\log T}{T} \right)^{1/(d-1)}\right)$で評価され，次元$d$が大きくなるにつれ急速に悪化する．
 
+一方，DDIOPが解けたかを判定できるLipschitz連続かつ凸な損失として後述のsuboptimality損失$\ell_{\mathrm{sub}}$があり，これにオンライン最適化などの一次法を適用できる．しかし既存研究の多くは「$T\to\infty$で$\ell_{\mathrm{sub}}$が$0$に近づく」漸近的な収束保証にとどまり，**有限回の反復で厳密に$\ell_{\mathrm{sub}}=0$を達成できるか**は整理されていなかった．
 
-| 手法 | $\left\|\left\| \phi_k - \phi^* \right\|\right\| $ ※解の予測誤差が$0$でない場合 |
-|------|-------------------------|
-| UPA | $O(k^{-1/(d-1)})$ |
-| RPA | $O_{\mathbb{P}}\left(\left( \frac{\log k}{k} \right)^{1/(d-1)}\right)$ |
-| PSGD2 (提案手法) [[P8](#K8)] | $O\left(k^{1/(\gamma+1)} \exp\left(-\frac{\gamma}{\gamma+2}k^{1/2}\right)\right)$ |
-
-### 効果  
-
-提案手法[[P5](#K5), [P8](#K8)]であるPSGD2は，推定困難な正定数$\gamma$が存在するものの，既存手法RPA, UPAに比べて，解の予測誤差の最小値を高速に達成できる．
-
-また，PSGD2は，ほとんど至る真の重み$\phi^*$で，有限回の反復で，解の予測誤差を$0$にすることができる．
+| 手法 | 典型的な保証 | 有限回で$\ell_{\mathrm{sub}}=0$ |
+|------|------|------|
+| 点群探索 UPA/RPA | カバリング誤差に基づく近似（次元依存が強い） | No |
+| オンライン最適化 (MWU/ONS/MetaGrad 等) | $\ell_{\mathrm{sub}}$の漸近的減少（例 $O(1/\sqrt{T})$, $O(\log T/T)$） | No |
+| 本研究（勾配ベース）[[P8](#K8)] | 凸・区分線形＋内点性により有限回で$0$を保証 | **Yes** |
 
 ### 提案手法  
 
-与えられた解を模倣するために，
+PLFが不連続である一方，与えられた解を模倣するための代替指標である
 suboptimality損失
 
 $$
-\begin{equation*}
-    \ell_{\mathrm{sub}} (\phi) := \frac{1}{N} \sum_{n=1}^N \left( \phi^{ \intercal} a(\phi , s^{(n)} ) - \phi^{ \intercal} a^{(n)} \right) 
-\end{equation*}
+    \ell_{\mathrm{sub}} (\theta) := \frac{1}{N} \sum_{n=1}^N \left( \theta^{\top} a^* (\theta , s^{(n)} ) - \theta^{\top} a^{(n)} \right) 
 $$
 
-を最小化すればよいことを説明する．
-Suboptimality損失は区分線形(Lipschitz)で凸であり,
-劣勾配が
+はLipschitz連続かつ凸であり，劣勾配が
 
 $$
-\begin{equation*}
-    g (\phi) = \frac{1}{N}
+    g (\theta) = \frac{1}{N}
     \sum_{n=1}^N 
     \left(
-        a ( \phi , s^{(n)} )
+        a^* ( \theta , s^{(n)} )
         -
         a^{(n)}
     \right)    
-\end{equation*} 
 $$
 
-という性質を持つ．
-劣勾配$g$は解の予測誤差に現れるノルムの中身の平均を取ったものである．解の予測誤差が最小値である$0$になることと劣勾配$g$が$0$になることは同値である[補題 5.11, [P8](#K8)]．
-劣勾配$g$が$0$を達成することと，suboptimality損失が最小値を達成することは同値だとする．
-このとき，解の予測誤差が最小値$0$を達成することと，suboptimality損失が最小値を達成することは同値だとしてよい．
+で与えられる[命題3.1, [P8](#K8)]．DDIOPが解けることと$\ell_{\mathrm{sub}}(\theta) = 0$となることは同値である．したがって，$\Delta^{d-1}$の上で suboptimality損失を最小化すればよい．
 
-Suboptimality損失は，凸でLipschitzで，劣勾配が$g$で与えられている．従って，Suboptimality損失を$\Delta^{d-1}$の上で最小化するためには，$\Delta^{d-1}$における射影劣勾配法をsuboptimality損失に適用すれば良い．学習率$$\left\{ \alpha_k \right\}_{k} \subset \mathbb{R}_ {>0}$$としたときの，射影劣勾配法をsuboptimality損失に適用したものを[アルゴリズム1](#alg:1)で与える．
-
-[アルゴリズム1](#alg:1)に
-学習率を$
-   \alpha_k =
-    \ell_{\mathrm{sub}} (\phi_k ) / \|\| g (\phi_k ) \| \|^2  ,
-$
-としたものをPSGDP,
-学習率を
-$
-    \alpha_k = k^{-1/2}
-    /
-        \left\|\left\|
-         g (\phi_k)
-        \right\|\right\|
-$
-としたものをPSGD2とする．
+提案手法は，suboptimality損失に対して，劣勾配情報$g$を用いて$\theta$を反復更新する勾配ベース最適化手法を適用するものである([アルゴリズム1](#alg:1))．更新則$\mathrm{update}_t$には，射影劣勾配法(projected subgradient descent, PSGD)
+$$\mathrm{update}_t = \mathrm{Proj}_{\Theta} \left( \theta^t - \alpha_t g(\theta^t) \right)$$
+などを用いる．学習率$\alpha_t$には，非加算的ステップサイズ(NSS)・ステップ長(NSL)，特に$\beta t^{-1/2}$型のSRSS/SRSL，最小値が既知の場合のPolyakなどがある．
 
 
-> **<a id="alg:1">アルゴリズム1</a>**: suboptimality損失最小化 [アルゴリズム1, [P5](#K5)]
-> 1. $\phi_1 = \left(\frac{1}{d}, \ldots, \frac{1}{d}\right) \in \Delta^{d-1}$ で初期化
-> 2. For $k = 1, \ldots, K-1$:
-> 3. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1} \leftarrow \phi_k - \alpha_k g(\phi_k)$ を計算
-> 4. &nbsp;&nbsp;&nbsp;&nbsp; $\phi_{k+1}$ を $\Delta^{d-1}$ へ射影する
+> **<a id="alg:1">アルゴリズム1</a>**: suboptimality損失最小化 [アルゴリズム1, [P8](#K8)]
+> 1. $\theta^1 \in \Theta$ で初期化
+> 2. For $t = 1, \ldots, T-1$:
+> 3. &nbsp;&nbsp;&nbsp;&nbsp; 各$n$に対し $x^*(\theta^t, s^{(n)})$ を解く
+> 4. &nbsp;&nbsp;&nbsp;&nbsp; $\theta^{t+1} \leftarrow \mathrm{update}_t \left( \{ \theta^{t^\prime} \}_{t^\prime=1}^t \mid \ell_{\mathrm{sub}}, g \right)$
 > 5. End For
-> 6. $$\phi^{\mathrm{best}}_K \in \mathrm{argmin}_{\phi \in \left\{\phi_k \right\}^K_{k=1}} \ell_{\mathrm{sub}}(\phi)$$ を出力
+> 6. $$\theta^{\mathrm{best}}_T \in \mathrm{argmin}_{\theta \in \left\{\theta^t \right\}^T_{t=1}} \ell_{\mathrm{sub}}(\theta)$$ を出力
+
+### 主結果（有限回での厳密可解性）
+
+勾配ベース最適化手法が，(A)過去の反復点列と劣勾配のみで更新され，(B)任意のLipschitz凸関数に対して最良反復に標準的な収束保証$Q$をもつとする．このとき正定数$\gamma(\ell_{\mathrm{sub}})$が存在し，$T \geq Q(\gamma(\ell_{\mathrm{sub}}))$ ならば $\min_{t = 1, \ldots, T}\ell_{\mathrm{sub}}(\theta^t)=0$，すなわちMILPに関するDDIOPを厳密に解ける[主定理, [P8](#K8)]．
+
+特にPSGD(SRSS/SRSL)では$Q$を具体的に構成でき，有限回到達までに要する反復回数の上界（概ね$O(\gamma(\ell_{\mathrm{sub}})^{-2})$オーダー）を与えられる．また派生結果として，PSGD(SRSS/SRSL)は有限回の反復でPLFの最小値$0$にも到達する．
+
+### 証明のアイデア（凸＋区分線形＋内点性）
+
+suboptimality損失は，(i)凸かつ区分線形であり，(ii)最小値が$0$であり，(iii)（ほとんど至る真の重み$\theta^*$で）最小値集合が内点をもつ．区分線形凸関数で最小値集合が内点をもつとき，最小値集合の内部だけ値を押し下げた凸区分線形関数$\widetilde{\ell}$を構成でき，最小値集合の外では$\ell_{\mathrm{sub}}=\widetilde{\ell}$となる．よって最小値集合に入るまで両者に対する一次法の反復は一致する．$\gamma:=\min \ell_{\mathrm{sub}} - \min\widetilde{\ell}>0$とおくと，$\widetilde{\ell}$への標準的な収束保証から有限回で$\widetilde{\ell}(\theta^T)\le \min\widetilde{\ell}+\gamma=\min\ell_{\mathrm{sub}}$となり，反復の一致から同じ$T$で$\ell_{\mathrm{sub}}(\theta^T)=0$に到達する．
+
+### 効果  
+
+提案手法[[P5](#K5), [P8](#K8)]は，推定困難な正定数$\gamma(\ell_{\mathrm{sub}})$に反復回数が依存するものの，UPA・RPA・オンライン最適化と異なり，**有限回の反復でDDIOPを厳密に解ける**点が新しい．数値実験では，PSGD(SRSL)が既知手法(UPA/RPA/CHAN)の$1/7$(LP)・$1/10$(スケジューリング)未満の反復でPLFを最小化し，$100\%$の確率でPLF$=0$を達成することを確認した．
 
 ## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[P13](#K13)]
 
@@ -228,7 +198,6 @@ $\theta \in \Theta $, $\phi \in \Phi$, $s \in \mathcal{S}$に対し，
 順問題を
 
 $$
-\begin{equation}
     x^* (\theta, \phi, s)
     \in
     \mathbf{FOP} (\theta, \phi, s)
@@ -236,20 +205,15 @@ $$
     \mathrm{arg max}_{x \in \mathcal{X} (\phi , s)} 
         \theta^{\top} f (x,s)
     \tag{2.1}
-%    \label{eq:FOP_linear}
-\end{equation}
 $$
 
 となる$x^*$を求めることである．最適解のデータ$\hat{x } \colon \mathcal{S} \to \mathcal{X}$が与えられたとき，データ駆動型逆最適化問題(data driven inverse optimization problem, DDIOP)を，以下を満たす$\theta \in \Theta$，$\phi \in \Phi$を求めることである：
 任意の状態$s \in \mathcal{S} $に対し，
 
 $$
-\begin{equation}
     \hat{x} (s) \in \mathbf{FOP} (\theta, \phi , s)
     .
     \tag{2.2}
-%    \label{eq:IOP_linear}
-\end{equation}
 $$
 
 順問題と逆最適化問題の違い,
@@ -308,8 +272,7 @@ $$
 Suboptimality損失$$\ell^{\mathrm{sub}, \lambda} \colon \mathcal{X} \times \Theta \times \Phi \times \mathcal{S} \to \mathbb{R}_{\geq 0 } $$ ([[Ren et. al. 2025](ren2025inverse), [P13](#K13)])を
 
 $$
-\begin{equation*}
-    \begin{split}
+\begin{aligned}
         \ell^{\mathrm{sub}, \lambda} \left( x, \theta ,\phi ,s \right) 
         & := 
         \mathrm{ReLU} \left(
@@ -322,8 +285,7 @@ $$
             \mathrm{ReLU} \left( 
                 h_j ( x , s) - \phi_j
             \right)
-    \end{split}
-\end{equation*}
+\end{aligned}
 $$
 
 で定義する．
