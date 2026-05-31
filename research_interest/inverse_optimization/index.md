@@ -158,13 +158,13 @@ suboptimality損失は，(i)凸かつ区分線形であり，(ii)最小値が$0$
 
 ||詳細|
 |---|---|
-|背景|混合整数線形計画において，観測データから目的関数や制約条件を学習するデータ駆動型逆最適化は，電力システムやスケジューリングなど様々な分野で適切な数理モデルを構築する上で，重要な役割を果たしている．|
-|課題|先行研究においてその両方を学習する方法は報告されていない．|
-|提案手法|目的関数が関数の線形和，制約条件が関数と閾値で表される問題のクラスに対して，まず制約条件を学習し，そして目的関数を学習する二段階アプローチを提案する．|
-|理論結果1|理論面では，有限データにおいて提案手法によって逆最適化問題を解けることの理論保証|
-|理論結果2|擬距離空間と劣Gaussにおける統計的学習理論の展開|
-|理論結果3|逆最適化の統計的学習理論の構築を行う．| 
-|実験結果|実験面では，決定変数が$100$ 個の整数線形計画であるスケジューリングにおいてでも学習できることを実証する．|
+|背景|混合整数線形計画(MILP)において，観測データから目的関数や制約条件を学習するデータ駆動型逆最適化問題(DDIOP)は，電力システムやスケジューリングなど様々な分野で適切な数理モデルを構築する上で，重要な役割を果たしている．|
+|課題|線形計画では両方を学習する研究があるが，MILPに関するDDIOPで目的関数と制約条件の両方を学習する方法は先行研究で報告されていない．|
+|提案手法|目的関数が特徴量の線形和，制約条件が関数と閾値で表される問題のクラスに対して，まず制約条件を学習し，次に目的関数を学習する二段階アプローチを提案する．|
+|理論結果1 (模倣性)|有限分布の下で，提案手法が観測された最適解を厳密に再現できること（模倣性）を保証する．|
+|理論結果2 (擬距離への拡張)|逆最適化で自然に現れるパラメータ間の距離が擬距離となることに着目し，劣Gauss仮定下の統計的学習理論（被覆数解析）を距離空間から擬距離空間へ拡張する．|
+|理論結果3 (汎化誤差)|上記を用いて，逆最適化（suboptimality損失最小化）の汎化誤差境界を導出する．|
+|実験結果|決定変数が$100$個（$D=10$）の整数線形計画であるスケジューリングでも，観測解を学習後の最適解として再現できる（DDIOPを解ける）ことを実証する．|
 
 このうち，逆最適化問題の定式化と，提案手法，理論結果1に関して解説する．
 
@@ -175,12 +175,12 @@ suboptimality損失は，(i)凸かつ区分線形であり，(ii)最小値が$0$
 
 - **決定変数の集合** $\mathcal{X}$: 空でない $\mathbb{R}^{k}$ の部分集合
 
-- **目的関数のパラメータ集合** $\Theta$: 空でない $\mathbb{R}^{d}$ の部分集合
+- **目的関数のパラメータ集合** $\Theta$: 空でない $\mathbb{R}^{D}$ の有界閉凸部分集合
 
 - **確率単体**  
-  $$\Delta^{d-1} := \left\{ \theta = (\theta_i)_i \in \mathbb{R}_{\geq 0}^d \,\middle|\, \sum_i \theta_i = 1 \right\}$$
+  $$\Delta^{D-1} := \left\{ \theta = (\theta_i)_i \in \mathbb{R}_{\geq 0}^D \,\middle|\, \sum_i \theta_i = 1 \right\}$$
 
-- **(特徴量)関数** $f_i \colon \mathcal{X} \times \mathcal{S} \to \mathbb{R}$ ($i = 1, \ldots, d$): 区分線形関数
+- **(特徴量)関数** $f_i \colon \mathcal{X} \times \mathcal{S} \to \mathbb{R}$ ($i = 1, \ldots, D$): 区分線形関数
 
 - **制約条件のラベルの数** $J$: 整数
 
@@ -296,15 +296,15 @@ Suboptimality損失は以下の性質を持つ：
 
 ### 提案手法
 
-$\Theta = \Delta^{d-1}$とする．
+$\Theta = \Delta^{D-1}$とする．
 逆最適化問題を解くアルゴリズムとして，以下を提案する．
 
 > **<a id="alg:2.1">アルゴリズム2.1</a>**: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [P13](#K13)]
 > 1. $\varepsilon \geq 0 $をとる．
-> 2. $$\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi | h ( x^{*} (s) , s) \leq \phi \text{ for } s \in \mathcal{S}^\prime \} $$
-> 3. 以下を満たす$\theta^{\sup}\in \Delta^{d-1}$を計算する： $$
-    \mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x}^{*} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$$
-> 4. $\theta^{\sup} \in \Delta^{d-1}, \phi^{\sup} \in \Phi$を出力
+> 2. $$\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi \mid h ( \hat{x} (s) , s) \leq \phi \text{ for } s \in \mathcal{S} \} $$
+> 3. 以下を満たす$\theta^{\sup}\in \Delta^{D-1}$を計算する： $$
+    \mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$$
+> 4. $\theta^{\sup} \in \Delta^{D-1}, \phi^{\sup} \in \Phi$を出力
 
 **注釈 2.2**: [アルゴリズム 2.1](#alg:2.1)の3行目を実装する方法として，[[P8](#K8),アルゴリズム 1]が挙げられる．
 
@@ -313,8 +313,8 @@ $\Theta = \Delta^{d-1}$とする．
 [アルゴリズム 2.1](#alg:2.1)によって，逆最適化(式(2.2))が解ける，つまり，以下の定理が成り立つ．
 
 > **定理 2.3**
-> 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Theta = \Delta^{d-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
-> このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{d-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[P8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
+> 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Theta = \Delta^{D-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
+> このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{D-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[P8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x}^{*} (s ) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
 
 # 参考文献
 
