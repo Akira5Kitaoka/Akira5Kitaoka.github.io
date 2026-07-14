@@ -8,7 +8,7 @@
 
 [T17] 北岡 旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/), 2025年9月12日.
 
-[T16] 北岡　旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム(Japanese)，[第3回 MfIP連携探索ワークショップ](https://sites.google.com/view/mfip-matching250314/%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%AC%9B%E6%BC%94), 1, 2025年3月14日．
+[T16] 北岡　旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [第3回 MfIP連携探索ワークショップ](https://sites.google.com/view/mfip-matching250314/%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%AC%9B%E6%BC%94), 1, 2025年3月14日.
 
 [T14] 北岡　旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [IBIS2024](https://ibisml.org/ibis2024/posters/), 1-086, 2024年11月6日.
 
@@ -29,7 +29,7 @@
 
 [T6] Akira Kitaoka, Analytic torsions associated with the Rumin complex on contact spheres, [HAYAMA Symposium on Complex Analysis in Several Variables XXI](https://sites.google.com/site/scvhayama/2019), Shonan Village Center, 2019年7月14日.
 
-[T5] Akira Kitaoka, An analytic torsion associated with the Rumin complex on the CR spheres, [2018年度多変数関数論冬セミナー](https://sites.google.com/site/scvwintersemi2018/), 大阪市立大学大学, 2018年12月21日.
+[T5] Akira Kitaoka, An analytic torsion associated with the Rumin complex on the CR spheres, [2018年度多変数関数論冬セミナー](https://sites.google.com/site/scvwintersemi2018/), 大阪市立大学, 2018年12月21日.
 
 [T4] Akira Kitaoka, The Rumin-Seshadri torsion function on the spheres, [HAYAMA Symposium on Complex Analysis in Several Variables XX & Pacific Rim Complex-Symplectic Geometry Conference](https://sites.google.com/site/scvhayama/2018), Shonan Village Center, 2018年7月14日.
 
@@ -37,8 +37,8 @@
 
 [T2] 北岡　旦, 球面上のRumin-Seshadri捩率関数, [数理新人セミナー](https://sites.google.com/view/math-graduate/MATHSCI-FRESHMAN-SEMINAR/2018), 京都大学, 2018年2月13日.
 
-[T1] 北岡　旦，論文紹介その２(Poletsky Theoryとその応用), 複素解析幾何のポテンシャル論的諸相(Potential Theoretical Aspects of Complex Analytic Geometry), 東京大学数理科学研究所, 2016年2月12日.
+[T1] 北岡　旦，論文紹介その２(Poletsky Theoryとその応用), 複素解析幾何のポテンシャル論的諸相(Potential Theoretical Aspects of Complex Analytic Geometry), 東京大学大学院数理科学研究科, 2016年2月12日.
 
 ### その他
 
-[T15] 北岡　旦, 数理科学の視点からみるNEC(Japanese), [数理キャリアデザインセミナー・情報交換会2024](https://www.ms.u-tokyo.ac.jp/career/cds2024_program.html), 東京大学数理科学研究所, 2024年12月3日. (招待講演)
+[T15] 北岡　旦, 数理科学の視点からみるNEC(Japanese), [数理キャリアデザインセミナー・情報交換会2024](https://www.ms.u-tokyo.ac.jp/career/cds2024_program.html), 東京大学大学院数理科学研究科, 2024年12月3日. (招待講演)
