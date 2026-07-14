@@ -12,7 +12,7 @@ The English version is [here](https://akira5kitaoka.github.io/Akira5Kitaoka-en.g
 <b>メール2</b>：akira5kitaoka(^^)gmail.com ((^^)をアットマークに変えてください)<br>
 <b>研究分野1 (情報科学&数理科学)</b>：逆最適化，数理最適化，機械学習<br>    
 研究内容：与えられたデータが最適解になるような，(混合整数)線形計画の目的関数の重みと制約条件を学習する高速なアルゴリズムを開発しています．<br>
-<b>研究分野2 (情報科学&数理科学)</b>：反実仮想説明，XAI(説明可能性AI)，機械学習，数値解析，微分幾何<br>
+<b>研究分野2 (情報科学&数理科学)</b>：反実仮想説明，XAI(説明可能AI)，機械学習，数値解析，微分幾何<br>
 研究内容：反実仮想説明，つまり「現時点での入力から，どう修正したら望む出力が得られるか」を説明するAIに関して研究しています．<br>
 </div>
 <div class="pict">
@@ -44,7 +44,7 @@ Akira KITAOKA<br>
 
 # ニュース
 
-- (**2026年5月4日**) [JSAI2026](https://www.ai-gakkai.or.jp/jsai2026/)に参加し，以下を発表する予定です．
+- (**2026年6月12日**) [JSAI2026](https://www.ai-gakkai.or.jp/jsai2026/)に参加し，以下を発表しました．
 
 [P20] 北岡旦, 逆混合整数計画法: 制約条件学習からの目的関数学習（Japanese）, [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. 
 
@@ -91,7 +91,7 @@ Akira KITAOKA<br>
 
 # しつもんコーナー
 
-Q. エルディッシュ数はいくつですか？
+Q. エルディシュ数はいくつですか？
 
 A. 5以下です．
 
