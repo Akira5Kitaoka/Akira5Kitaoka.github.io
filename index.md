@@ -44,9 +44,14 @@ Akira KITAOKA<br>
 
 # ニュース
 
+- (**2026年07月24日**) 以下の論文をarXivに投稿しました．
+
+[P21] Akira Kitaoka, Explicit Iteration Complexity of Exact Data-Driven Inverse Optimization for Integer Linear Programs, preprint.
+[[arXiv:2607.22263](https://arxiv.org/abs/2607.22263)]
+
 - (**2026年6月12日**) [JSAI2026](https://www.ai-gakkai.or.jp/jsai2026/)に参加し，以下を発表しました．
 
-[P20] 北岡旦, 逆混合整数計画法: 制約条件学習からの目的関数学習（Japanese）, [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. 
+[P20] 北岡 旦, 逆混合整数計画法: 制約条件学習からの目的関数学習 (Japanese), [JSAI2026](https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/5H2-OS-18a-02), 5H2-OS-18a, 2026年6月12日. \[[論文](https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5H2OS18a02/_article/-char/ja/)\]
 
 - (**2026年5月3日**) 以下のツールをGitHubに公開しました．
 
