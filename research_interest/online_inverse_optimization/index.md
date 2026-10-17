@@ -68,20 +68,20 @@ $$
 
 効用ベクトル$\theta^*$と行動$x$がともに$d$次元単位球に含まれる場合（[[Sakaue 2026b](#sakaue2026tight)]の表1と同じ正規化）．
 
-|手法|$R^{\mathrm{est}}_T$|$T$に依存しない|追加の仮定|proper|有限回の誤り|1ラウンドあたりの計算|
-|---|---|---|---|---|---|---|
-|OGD [[Bärmann et al. 2018](#barmann2018online)]|$O(\sqrt{T})$|No|なし|Yes|—|射影1回|
-|ProjectedCones [[Besbes et al. 2021, 2025](#besbes2025contextual)]|$O(d^4 \log T)$|No|なし|Yes|—|—|
-|切除平面法 [[Gollapudi et al. 2021](#gollapudi2021contextual)]|$O(d \log T)$|No|なし|Yes|—|重心の計算|
-|切除平面法 [[Gollapudi et al. 2021](#gollapudi2021contextual)]|$\exp(O(d \log d))$|Yes|なし|Yes|—|John楕円体の計算|
-|ONS [[Sakaue et al. 2025b](#sakaue2025online)]|$O(d \log T)$|No|なし|Yes|—|$O(d^2)$＋射影1回|
-|二次パーセプトロン（CoRectron）[[Sakaue 2026a](#sakaue2026simple)]|$O(d \log T)$|No|なし|Yes|—|線形最適化1回＋$O(d^2)$（射影なし）|
-|多重スケール報酬ヘッジング [[Dewasurendra 2026](#dewasurendra2026)]|$O(d)$|Yes|なし|No|—|一般には$T^{\Theta(d)}$個のプロキシ（非凸な投票の最大化）|
-|**SGS-ONS, SGS-MetaGrad [[P22](#K22)]**|$O\left(d \log \left(2 + \frac{1}{\gamma}\right)\right)$ ※1|**Yes**|一様マージン$\gamma>0$|Yes|**Yes**|誤りラウンドのみ$O(d^2)$＋射影1回|
-|可変計量アルゴリズム [[Cai et al. 2026](#cai2026efficient)]|$O(d)$|Yes|なし|Yes|—|線形最適化1回＋$O(d^2)$|
-|多重スケール行列重み [[Sakaue 2026b](#sakaue2026tight)]|$O(\sqrt{d})$（期待値）|Yes|なし|No|—|$(dT)^{O(d)}$回の線形最適化|
-|[[Gupta et al. 2026](#gupta2026optimal)]|$O(\sqrt{d})$|Yes|なし|Yes|—|線形最適化1回＋$O(td^2+t^2d)$回の演算（ラウンド$t$，決定的）|
-|下界 [[Sakaue et al. 2025b](#sakaue2025online), [Sakaue 2026b](#sakaue2026tight)]|$\Omega(\sqrt{d})$（$T \geq d$）|—|—|—|—|—|
+|手法|$R^{\mathrm{est}}_T$|追加の仮定|proper|有限回の誤り|1ラウンドあたりの計算|
+|---|---|---|---|---|---|
+|OGD [[Bärmann et al. 2018](#barmann2018online)]|$O(\sqrt{T})$|なし|Yes|—|射影1回|
+|ProjectedCones [[Besbes et al. 2021, 2025](#besbes2025contextual)]|$O(d^4 \log T)$|なし|Yes|—|—|
+|切除平面法 [[Gollapudi et al. 2021](#gollapudi2021contextual)]|$O(d \log T)$|なし|Yes|—|重心の計算|
+|切除平面法 [[Gollapudi et al. 2021](#gollapudi2021contextual)]|$\exp(O(d \log d))$|なし|Yes|—|John楕円体の計算|
+|ONS [[Sakaue et al. 2025b](#sakaue2025online)]|$O(d \log T)$|なし|Yes|—|$O(d^2)$＋射影1回|
+|二次パーセプトロン（CoRectron）[[Sakaue 2026a](#sakaue2026simple)]|$O(d \log T)$|なし|Yes|—|線形最適化1回＋$O(d^2)$（射影なし）|
+|多重スケール報酬ヘッジング [[Dewasurendra 2026](#dewasurendra2026)]|$O(d)$|なし|No|—|一般には$T^{\Theta(d)}$個のプロキシ（非凸な投票の最大化）|
+|**SGS-ONS, SGS-MetaGrad [[P22](#K22)]**|$O\left(d \log \left(2 + \frac{1}{\gamma}\right)\right)$ ※1|一様マージン$\gamma>0$|Yes|**Yes**|誤りラウンドのみ$O(d^2)$＋射影1回|
+|可変計量アルゴリズム [[Cai et al. 2026](#cai2026efficient)]|$O(d)$|なし|Yes|—|線形最適化1回＋$O(d^2)$|
+|多重スケール行列重み [[Sakaue 2026b](#sakaue2026tight)]|$O(\sqrt{d})$（期待値）|なし|No|—|$(dT)^{O(d)}$回の線形最適化|
+|[[Gupta et al. 2026](#gupta2026optimal)]|$O(\sqrt{d})$|なし|Yes|—|線形最適化1回＋$O(td^2+t^2d)$回の演算（ラウンド$t$，決定的）|
+|下界 [[Sakaue et al. 2025b](#sakaue2025online), [Sakaue 2026b](#sakaue2026tight)]|$\Omega(\sqrt{d})$（$T \geq d$）|—|—|—|—|
 
 ※ properな学習者とは，現在の行動集合を観測する前に非零の効用の推定値を固定し，その推定値の最大化元を推薦する学習者を指す（[[Sakaue 2026b](#sakaue2026tight)]の用法）．そうでない学習者をimproperと呼ぶ．なお[[Sakaue 2026a](#sakaue2026simple)]は，推定値の大きさを制限しないという意味で自らの手法をimproperと呼んでいるが，この定義ではproperな学習者である．
 
