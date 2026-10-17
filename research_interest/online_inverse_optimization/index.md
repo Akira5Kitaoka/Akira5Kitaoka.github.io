@@ -91,13 +91,13 @@ $$
 
 重み空間$\Theta$として確率単体を含む一般の有界閉凸集合を許す研究を比べる．$L, D$は※1と同じ定数である．
 
-|手法|$R^{\mathrm{sub}}_T$|$R^{\mathrm{est}}_T$|$T$に依存しない|追加の仮定|有限回の誤り|
-|---|---|---|---|---|---|
-|OGD [[Bärmann et al. 2018](#barmann2018online)]|$O(LD\sqrt{T})$|$O(LD\sqrt{T})$|No|なし|—|
-|FTRL [[Sakaue et al. 2025a](#sakaue2025aistats)]|$O(1/\Delta^2)$|$O(1/\Delta^2)$|Yes|ギャップ条件$\Delta > 0$|—|
-|ONS, MetaGrad [[Sakaue et al. 2025b](#sakaue2025online)]|$O\left(LD\, d \log \frac{T}{d}\right)$|$O\left(LD\, d \log \frac{T}{d}\right)$|No|なし|—|
-|**SGS-OGD [[P22](#K22)]**|$\dfrac{L^2D^2}{2\gamma}$|$\dfrac{2L^2D^2}{\gamma}$|**Yes**|一様マージン$\gamma>0$|**Yes**|
-|**SGS-ONS [[P22](#K22)]**|$LD\left(1 + d \log \max\left(\frac{LD}{\gamma}, 1\right)\right)$|$LD\left(1 + 2d \log\left(2 + \frac{2LD}{\gamma}\right)\right)$|**Yes**|一様マージン$\gamma>0$|**Yes**|
+|手法|$R^{\mathrm{sub}}_T$|$R^{\mathrm{est}}_T$|追加の仮定|有限回の誤り|
+|---|---|---|---|---|
+|OGD [[Bärmann et al. 2018](#barmann2018online)]|$O(LD\sqrt{T})$|$O(LD\sqrt{T})$|なし|—|
+|FTRL [[Sakaue et al. 2025a](#sakaue2025aistats)]|$O(1/\Delta^2)$|$O(1/\Delta^2)$|ギャップ条件$\Delta > 0$|—|
+|ONS, MetaGrad [[Sakaue et al. 2025b](#sakaue2025online)]|$O\left(LD\, d \log \frac{T}{d}\right)$|$O\left(LD\, d \log \frac{T}{d}\right)$|なし|—|
+|**SGS-OGD [[P22](#K22)]**|$\dfrac{L^2D^2}{2\gamma}$|$\dfrac{2L^2D^2}{\gamma}$|一様マージン$\gamma>0$|**Yes**|
+|**SGS-ONS [[P22](#K22)]**|$LD\left(1 + d \log \max\left(\frac{LD}{\gamma}, 1\right)\right)$|$LD\left(1 + 2d \log\left(2 + \frac{2LD}{\gamma}\right)\right)$|一様マージン$\gamma>0$|**Yes**|
 
 [[Sakaue et al. 2025a](#sakaue2025aistats)]の定数は，正則化項と$\Theta$，$X(s)$の大きさに依存する．
 
