@@ -4,6 +4,8 @@
 ### 研究集会・セミナー・ポスター発表
 ただし，文章を書いたものは，[論文](../papers/index.md)に入れています．
 
+[T19] 北岡 旦, アウトパフォーマンス逆最適化：熟練者を上回る解を導く目的関数の学習 (Japanese), [IBIS 2026](https://ibisml.org/ibis2026/posters/), 2-050, 2026年10月28日.
+
 [T18] 北岡 旦, Inverse Mixed-Integer Programming: Learning of Constraints then Objective Functions (Japanese), [IBIS 2025](https://ibisml.org/ibis2025/posters/), 2025年11月12日.
 
 [T17] 北岡 旦, 混合整数線形計画における目的関数の重みを決定する高速な逆最適化アルゴリズム (Japanese), [日本オペレーションズ・リサーチ学会 2025年秋季研究発表会＆シンポジウム](https://orsj.org/2025f/), 2025年9月12日.

@@ -44,6 +44,20 @@ Akira KITAOKA<br>
 
 # ニュース
 
+- (**2026年10月16日**) [IBIS 2026](https://ibisml.org/ibis2026/posters/)に参加し，以下を発表する予定です．
+
+[T19] 北岡 旦, アウトパフォーマンス逆最適化：熟練者を上回る解を導く目的関数の学習 (Japanese), [IBIS 2026](https://ibisml.org/ibis2026/posters/), 2-050, 2026年10月28日.
+
+- (**2026年10月7日**) 以下の論文をarXivに投稿しました．
+
+[P23] Akira Kitaoka, Outperformance Inverse Optimization: Learning Objective Functions that Outperform Agent Decisions, preprint.
+[[arXiv:2610.09890](https://arxiv.org/abs/2610.09890)]
+
+- (**2026年9月9日**) 以下の論文をarXivに投稿しました．
+
+[P22] Akira Kitaoka, Online Inverse Integer Linear Optimization via Small-Gradient Skipping: Constant Regret and Finite Mistakes, preprint.
+[[arXiv:2609.09809](https://arxiv.org/abs/2609.09809)]
+
 - (**2026年07月24日**) 以下の論文をarXivに投稿しました．
 
 [P21] Akira Kitaoka, Explicit Iteration Complexity of Exact Data-Driven Inverse Optimization for Integer Linear Programs, preprint.

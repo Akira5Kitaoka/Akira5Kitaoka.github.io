@@ -2,6 +2,12 @@
 
 ### プレプリント
 
+[P23] Akira Kitaoka, Outperformance Inverse Optimization: Learning Objective Functions that Outperform Agent Decisions, preprint.
+[[arXiv:2610.09890](https://arxiv.org/abs/2610.09890)]
+
+[P22] Akira Kitaoka, Online Inverse Integer Linear Optimization via Small-Gradient Skipping: Constant Regret and Finite Mistakes, preprint.
+[[arXiv:2609.09809](https://arxiv.org/abs/2609.09809)]
+
 [P21] Akira Kitaoka, Explicit Iteration Complexity of Exact Data-Driven Inverse Optimization for Integer Linear Programs, preprint.
 [[arXiv:2607.22263](https://arxiv.org/abs/2607.22263)]
 
