@@ -19,7 +19,7 @@
 - 反実仮想説明の中でも，アクションを経路で提示する方法について，研究しています．
 - <a href="{{ '/research_interest/counterfactual_explanation' | relative_url }}">詳細>></a>
 
-### 平均化データ学習 
+### 平均化データ学習
 - データの平均化をはじめとするデータ集約技術は，データ要約，圧縮，アノテーションコスト削減，データ品質向上，プライバシー保護に有用です．
 - 平均化されたデータから機械学習する方法について研究していました．
 - <a href="{{ '/research_interest/averaged_data' | relative_url }}">詳細>></a>
