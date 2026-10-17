@@ -52,6 +52,7 @@ padding: 10px 0;
 // 定理・命題の枠
 .theorem-box{
     border: solid 2px #22373A;
+    color: #22373A;
     padding: 0.8em 1em;
     margin: 1em 0;
 }
@@ -62,6 +63,7 @@ padding: 10px 0;
 // アルゴリズムの枠（LaTeX の algorithmic 風）
 .algorithm-box{
     border: solid 2px #22373A;
+    color: #22373A;
     padding: 0.6em 1em;
     margin: 1em 0;
 }
