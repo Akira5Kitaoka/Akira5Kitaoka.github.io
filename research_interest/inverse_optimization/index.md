@@ -130,13 +130,17 @@ $$\mathrm{update}_t = \mathrm{Proj}_{\Theta} \left( \theta^t - \alpha_t g(\theta
 などを用いる．学習率$\alpha_t$には，非加算的ステップサイズ(NSS)・ステップ長(NSL)，特に$\beta t^{-1/2}$型のSRSS/SRSL，最小値が既知の場合のPolyakなどがある．
 
 
-> **<a id="alg:1">アルゴリズム1</a>**: suboptimality損失最小化 [アルゴリズム1, [P8](#K8)]
-> 1. $\theta^1 \in \Theta$ で初期化
-> 2. For $t = 1, \ldots, T-1$:
-> 3. &nbsp;&nbsp;&nbsp;&nbsp; 各$n$に対し $x^*(\theta^t, s^{(n)})$ を解く
-> 4. &nbsp;&nbsp;&nbsp;&nbsp; $$\theta^{t+1} \leftarrow \mathrm{update}_t \left( \{ \theta^{t^\prime} \}_{t^\prime=1}^t \mid \ell_{\mathrm{sub}}, g \right)$$
-> 5. End For
-> 6. $$\theta^{\mathrm{best}}_T \in \mathrm{argmin}_{\theta \in \left\{\theta^t \right\}^T_{t=1}} \ell_{\mathrm{sub}}(\theta)$$ を出力
+<div class="algorithm-box" markdown="0">
+<div class="algorithm-caption"><b><a id="alg:1">アルゴリズム 1</a></b> suboptimality損失最小化 [アルゴリズム1, <a href="#K8">P8</a>]</div>
+<ol class="algorithmic">
+<li>$\theta^1 \in \Theta$ で初期化</li>
+<li><b>for</b> $t = 1, \ldots, T-1$ <b>do</b></li>
+<li class="indent-1">各 $n$ に対し $x^*(\theta^t, s^{(n)})$ を解く</li>
+<li class="indent-1">$\theta^{t+1} \leftarrow \mathrm{update}_t \left( \{ \theta^{t^\prime} \}_{t^\prime=1}^t \mid \ell_{\mathrm{sub}}, g \right)$</li>
+<li><b>end for</b></li>
+<li><b>return</b> $\theta^{\mathrm{best}}_T \in \mathrm{argmin}_{\theta \in \left\{\theta^t \right\}^T_{t=1}} \ell_{\mathrm{sub}}(\theta)$</li>
+</ol>
+</div>
 
 ### 主結果（有限回での厳密可解性）
 
@@ -291,20 +295,26 @@ $$
 で定義する．
 
 Suboptimality損失は以下の性質を持つ：
-> **命題 2.1**
-> 定数$\lambda > 0 $とする．$x \in \mathcal{X}$とする．このとき，$x \in \mathrm{FOP}( \theta , \phi , s)$であることと$\ell^{\mathrm{sub}, \lambda} ( x, \theta , \phi ,s ) = 0$は同値である．
+
+<div class="theorem-box" markdown="1">
+**命題 2.1**
+定数$\lambda > 0 $とする．$x \in \mathcal{X}$とする．このとき，$x \in \mathrm{FOP}( \theta , \phi , s)$であることと$\ell^{\mathrm{sub}, \lambda} ( x, \theta , \phi ,s ) = 0$は同値である．
+</div>
 
 ### 提案手法
 
 $\Theta = \Delta^{D-1}$とする．
 逆最適化問題を解くアルゴリズムとして，以下を提案する．
 
-> **<a id="alg:2.1">アルゴリズム2.1</a>**: Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, [P13](#K13)]
-> 1. $\varepsilon \geq 0 $をとる．
-> 2. $$\phi^{\sup}:= \min_{\phi \in \Phi} \{ \phi \mid h ( \hat{x} (s) , s) \leq \phi \text{ for } s \in \mathcal{S} \} $$
-> 3. 以下を満たす$\theta^{\sup}\in \Delta^{D-1}$を計算する： $$
-    \mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$$
-> 4. $\theta^{\sup} \in \Delta^{D-1}, \phi^{\sup} \in \Phi$を出力
+<div class="algorithm-box" markdown="0">
+<div class="algorithm-caption"><b><a id="alg:2.1">アルゴリズム 2.1</a></b> Maximizing feasible set then minimizing suboptimality loss [アルゴリズム2, <a href="#K13">P13</a>]</div>
+<ol class="algorithmic">
+<li>$\varepsilon \geq 0$ をとる．</li>
+<li>$\phi^{\sup} := \min_{\phi \in \Phi} \{ \phi \mid h ( \hat{x} (s) , s) \leq \phi \text{ for } s \in \mathcal{S} \}$</li>
+<li>$\mathbb{E}_{S} \ell^{\mathrm{sub}, 0} ( \hat{x} (S), \theta^{\sup} , \phi^{\sup} ,S ) \leq \varepsilon$ を満たす $\theta^{\sup} \in \Delta^{D-1}$ を計算する</li>
+<li><b>return</b> $\theta^{\sup} \in \Delta^{D-1}, \phi^{\sup} \in \Phi$</li>
+</ol>
+</div>
 
 **注釈 2.2**: [アルゴリズム 2.1](#alg:2.1)の3行目を実装する方法として，[[P8](#K8),アルゴリズム 1]が挙げられる．
 
@@ -312,9 +322,11 @@ $\Theta = \Delta^{D-1}$とする．
 
 [アルゴリズム 2.1](#alg:2.1)によって，逆最適化(式(2.2))が解ける，つまり，以下の定理が成り立つ．
 
-> **定理 2.3**
-> 写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Theta = \Delta^{D-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
-> このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{D-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[P8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x} (s) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
+<div class="theorem-box" markdown="1">
+**定理 2.3**
+写像$\hat{x} \colon \mathcal{S} \to \mathcal{X}$が最適解写像であるとは，ある$\theta^{\mathrm{true}} \in \Theta = \Delta^{D-1}$, $\phi^{\mathrm{true}} \in \Phi $が存在して，任意の$s \in \mathcal{S}$に対して$\hat{x} (s) = x^* (\theta^{\mathrm{true}} , \phi^{\mathrm{true}} , s)$となるものとする．$\varepsilon = 0 $とする．
+このとき，ほとんど至る$\theta^{\mathrm{true}} \in \Delta^{D-1}$に対して，[アルゴリズム 2.1](#alg:2.1)の3行目に[[P8](#K8),アルゴリズム 1]を組みこんだ[アルゴリズム 2.1](#alg:2.1)で出力された，$\theta^{\sup}, \phi^{\sup}$は$\hat{x} (s) \in \mathbf{FOP} (\theta^{\sup}, \phi^{\sup}, s)$，つまり，式(2.2)を満たす．
+</div>
 
 # 参考文献
 

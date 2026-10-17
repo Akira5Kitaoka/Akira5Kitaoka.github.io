@@ -48,3 +48,46 @@ color: white;
 text-align: center;
 padding: 10px 0;
 }
+
+// 定理・命題の枠
+.theorem-box{
+    border: solid 2px #22373A;
+    padding: 0.8em 1em;
+    margin: 1em 0;
+}
+.theorem-box > :last-child{
+    margin-bottom: 0;
+}
+
+// アルゴリズムの枠（LaTeX の algorithmic 風）
+.algorithm-box{
+    border: solid 2px #22373A;
+    padding: 0.6em 1em;
+    margin: 1em 0;
+}
+.algorithm-caption{
+    border-bottom: solid 1px #22373A;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.4em;
+}
+.algorithmic{
+    list-style: none;
+    counter-reset: algline;
+    padding-left: 0;
+    margin: 0;
+}
+.algorithmic li{
+    counter-increment: algline;
+    position: relative;
+    padding-left: 2.2em;
+}
+.algorithmic li::before{
+    content: counter(algline) ":";
+    position: absolute;
+    left: 0;
+    width: 1.6em;
+    text-align: right;
+    font-size: 0.85em;
+}
+.algorithmic li.indent-1{ padding-left: 3.7em; }
+.algorithmic li.indent-2{ padding-left: 5.2em; }
