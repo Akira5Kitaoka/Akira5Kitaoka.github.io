@@ -2,7 +2,7 @@
 
 更新日：2026年10月17日
 
-# 混合整数計画の逆最適化問題
+# 混合整数計画に対する逆最適化問題
 
 **キーワード**: 逆最適化，数理最適化，組合せ最適化
 
@@ -16,11 +16,11 @@
 -->
 
 そこで，北岡がかかわった研究は以下である．(独立に読めます．)
-- [1](#S1). 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと [[P5](#K5), [P8](#K8)]
+- [1](#S1). 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案し，整数線形計画ではその反復回数を明示的に評価したこと [[P5](#K5), [P8](#K8), [P21](#K21)]
 
 - [2](#S2). 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[P13](#K13)]
 
-## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案したこと[[P5](#K5), [P8](#K8)]
+## <a id="S1">1</a>. 混合整数線形計画における目的関数の重みを高速に解くアルゴリズムを提案し，整数線形計画ではその反復回数を明示的に評価したこと[[P5](#K5), [P8](#K8), [P21](#K21)]
 
 ### [[P8](#K8)]の概要
 
@@ -155,6 +155,33 @@ suboptimality損失は，(i)凸かつ区分線形であり，(ii)最小値が$0$
 ### 効果  
 
 提案手法[[P5](#K5), [P8](#K8)]は，推定困難な正定数$\gamma(\ell_{\mathrm{sub}})$に反復回数が依存するものの，UPA・RPA・オンライン最適化と異なり，**有限回の反復でDDIOPを厳密に解ける**点が新しい．数値実験では，PSGD(SRSL)が既知手法(UPA/RPA/CHAN)の$1/7$(LP)・$1/10$(スケジューリング)未満の反復でPLFを最小化し，$100\%$の確率でPLF$=0$を達成することを確認した．
+定数$\gamma(\ell_{\mathrm{sub}})$を問題の規模で明示的に評価することは，順問題が整数線形計画の場合に[[P21](#K21)]で行った（[次項](#S1-P21)）．
+
+### <a id="S1-P21"></a>[[P21](#K21)]: 整数線形計画における反復回数の明示的評価
+
+||詳細|
+|---|---|
+|背景|[[P8](#K8)]により，勾配ベース最適化手法は有限回の反復で$\ell_{\mathrm{sub}}=0$に到達し，その反復回数は幾何的な定数$\gamma(\ell_{\mathrm{sub}})>0$を用いて$O(\gamma(\ell_{\mathrm{sub}})^{-2})$で抑えられる．|
+|課題|$\gamma(\ell_{\mathrm{sub}})$は問題の幾何で定まる抽象的な定数であり，正であること以外に，問題の規模の関数として下から抑える手段が知られていなかった．そのため，厳密に解くのに十分な反復回数を，標本数$N$や特徴量の次元$d$の明示的な関数として与えることができなかった．|
+|提案手法|順問題が整数線形計画(ILP)である場合に，整数計画の構造（完全単模性，Graver基底，M凸性/M$^\natural$凸性）から$\gamma(\ell_{\mathrm{sub}})$の明示的な下界を導き，[[P8](#K8)]の反復回数の上界に代入する．|
+|理論結果1 ($\gamma(\ell_{\mathrm{sub}})$の下界)|一般のILP，線形不等式制約（Graver基底），完全単模，M凸/M$^\natural$凸の各場合に，$\gamma(\ell_{\mathrm{sub}})$の明示的な下界を与える．|
+|理論結果2 (反復回数の明示的評価)|DDIOPを厳密に解く（PLFの最小値$0$に到達する）のに十分な反復回数を，$N$，$d$，特徴量の値域，制約行列の構造の明示的な関数として与える．|
+|理論結果3 (緊密性)|$\gamma(\ell_{\mathrm{sub}})$が次元$d$について指数的に小さくなるILPの例を構成し，一般のILPに対する下界の$d$への指数的依存が本質的であることを示す．|
+
+以下，$\Theta = \Delta^{d-1}$とし，特徴量の値域を$m_i := \sup_{s \in \mathcal{S}} \left( \max_{x \in X(s)} f_i(x) - \min_{x \in X(s)} f_i(x) \right)$，$m = (m_i)_i$とおく．実行可能領域が線形不等式系$X(s)=\\{x\in\mathbb{Z}^d \mid A x\le b(s)\\}$で与えられる場合は，スラック拡大行列$\widetilde{A}=[A\mid I]$のGraver基底の$\ell_\infty$ノルム$C:=g_\infty(\widetilde{A}) \in \mathbb{Z}_{\geq 1}$を用いる．
+PSGD(SRSS/SRSL)の反復回数の上界は$O(\gamma(\ell_{\mathrm{sub}})^{-2}) \times \mathrm{poly}$（$\mathrm{poly} := \mathrm{poly}(\mathrm{diam}(\Theta),\beta,L(\ell_{\mathrm{sub}}))$）の形をしているので，$\gamma(\ell_{\mathrm{sub}})$の下界を代入すると次の表を得る[[P21](#K21)]．
+
+|設定|$\gamma(\ell_{\mathrm{sub}})$の下界|反復回数の上界 (SRSS, SRSL)|
+|---|---|---|
+|一般のILP|$\dfrac{1}{N^{d}\max(d-1,\sqrt2)\,\lVert m\rVert_2^{d-1}}$|$O\left(N^{2d}\,d^{2}\,\lVert m\rVert_2^{2(d-1)}\,\mathrm{poly}\right)$|
+|M凸, M$^\natural$凸|$\Omega\left(\dfrac{1}{N d^{2}}\right)$|$O\left(N^{2}d^{4}\,\mathrm{poly}\right)$|
+|線形不等式（定数$C$）|$\Omega\left(\dfrac{1}{N\,d^{(d+1)/2}(2C)^{d-1}}\right)$|$O\left(N^{2}\,d^{d+1}(2C)^{2(d-1)}\,\mathrm{poly}\right)$|
+|完全単模（$C=1$）|$\Omega\left(\dfrac{1}{N\,d^{(d+1)/2}2^{d-1}}\right)$|$O\left(N^{2}\,d^{d+1}4^{d-1}\,\mathrm{poly}\right)$|
+
+PLFの最小値$0$に到達するのに必要な反復回数も，同じオーダーで評価できる．
+
+**効果**: これにより，(i) アルゴリズムを実行する前に反復回数の予算や停止基準を決められる，(ii) 有限回到達の保証とリグレット型の漸近的な保証を，同じ問題の規模の尺度で比較できる，(iii) 同じ実行可能領域でも，どの構造を使って$\gamma(\ell_{\mathrm{sub}})$を評価するかで反復回数の見積もりが次元の多項式にも指数にもなる（M$^\natural$凸性を直接使うと$\Omega(1/(Nd^2))$，一般の線形不等式として扱うと$\Omega(1/(N d^{(d+1)/2}(2C)^{d-1}))$）ことがわかる．
+
 
 ## <a id="S2">2</a>. 混合整数線形計画における目的関数の重みと制約条件の閾値を高速に解くアルゴリズムを提案したこと [[P13](#K13)]
 
@@ -339,6 +366,10 @@ $\Theta = \Delta^{D-1}$とする．
 
 [<a id="K13">P13</a>]  Akira Kitaoka, Inverse Mixed-Integer Programming: Learning Constraints then Objective Functions, preprint.
 [[arXiv:2510.04455](https://arxiv.org/abs/2510.04455)]
+
+[<a id="K21">P21</a>] Akira Kitaoka, Explicit Iteration Complexity of Exact Data-Driven Inverse Optimization for Integer Linear Programs, preprint.
+[[arXiv:2607.22263](https://arxiv.org/abs/2607.22263)]
+
 
 [<a id="ren2025inverse">Ren et al. 2025</a>] Ren, K., Esfahani, P. M., and Georghiou, A. (2025). Inverse optimization via learning feasible regions. In The 42nd International Conference on Machine Learning. to appear. [[arXiv:2505.15025](https://arxiv.org/abs/2505.15025)]
 
