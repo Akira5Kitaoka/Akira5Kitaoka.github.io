@@ -360,7 +360,7 @@ $\Theta = \Delta^{D-1}$とする．
 [<a id="K5">P5</a>] Akira Kitaoka, Riki Eto, A proof of convergence of inverse reinforcement learning for multi-objective optimization, preprint.
 [[arXiv:2305.06137](https://arxiv.org/abs/2305.06137)]
 
-[<a id="K8">P8</a>] Akira Kitaoka, A fast algorithm to minimize prediction loss of the optimal solution in inverse optimization problem of MILP, preprint.
+[<a id="K8">P8</a>] Akira Kitaoka, Exact Solution to Data-Driven Inverse Optimization of MILPs in Finite Time via Gradient-Based Methods, preprint.
 [[arXiv:2405.14273](https://arxiv.org/abs/2405.14273)]
 
 
