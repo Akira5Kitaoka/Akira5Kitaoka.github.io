@@ -44,7 +44,7 @@ Akira KITAOKA<br>
 
 # ニュース
 
-- (**2026年10月16日**) [IBIS 2026](https://ibisml.org/ibis2026/posters/)に参加し，以下を発表する予定です．
+- (**2026年10月28日**) [IBIS 2026](https://ibisml.org/ibis2026/posters/)に参加し，以下を発表しましたあ．
 
 [T19] 北岡 旦, アウトパフォーマンス逆最適化：熟練者を上回る解を導く目的関数の学習 (Japanese), [IBIS 2026](https://ibisml.org/ibis2026/posters/), 2-050, 2026年10月28日.
 
